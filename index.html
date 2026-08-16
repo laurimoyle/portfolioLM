@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lauri Moyle — Not for me less, not void</title>
+<meta name="description" content="Paintings and layered line drawings — the visual art of Lauri Moyle, Chattanooga TN.">
+<style>
+  @font-face {
+    font-family: "Eczar"; font-style: normal; font-weight: 400; font-display: swap;
+    src: url("fonts/eczar.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Chivo Mono"; font-style: normal; font-weight: 300; font-display: swap;
+    src: url("fonts/chivomono.woff2") format("woff2");
+  }
+  :root {
+    --ground: #131110;
+    --ground-lift: #1b1815;
+    --ink: #e9e2d6;
+    --ink-dim: #9a9184;
+    --glow: 232, 179, 75; /* warm backlight, used at low alpha only */
+    --hairline: rgba(233, 226, 214, 0.12);
+    --max: 720px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Eczar", Georgia, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--hairline); transition: border-color .2s ease; }
+  a:hover, a:focus-visible { border-color: var(--ink); }
+  a:focus-visible { outline: 2px solid rgba(var(--glow), .6); outline-offset: 3px; }
+
+  .mono {
+    font-family: "Chivo Mono", monospace;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+  }
+
+  header {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 18vh 24px 14vh;
+    text-align: left;
+  }
+  header h1 {
+    font-size: clamp(34px, 7vw, 56px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  header .sub {
+    margin-top: 20px;
+    max-width: 46ch;
+    color: var(--ink-dim);
+    font-size: 18px;
+    font-style: italic;
+  }
+  header .mono { display: block; margin-bottom: 28px; }
+
+  main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  .work {
+    margin: 0 0 16vh;
+  }
+  .frame {
+    position: relative;
+    border-radius: 2px;
+  }
+  /* the backlight: a soft glow behind each piece, like the shadow boxes */
+  .frame::before {
+    content: "";
+    position: absolute;
+    inset: -6%;
+    background: radial-gradient(ellipse at 50% 45%, rgba(var(--glow), 0.13), transparent 68%);
+    z-index: 0;
+    pointer-events: none;
+    transition: transform 1.2s ease;
+  }
+  .frame:hover::before { transform: translate(2%, -2%); }
+  .frame img, .frame .placeholder {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+  }
+  .frame img { height: auto; }
+  .placeholder {
+    background: var(--ground-lift);
+    border: 1px solid var(--hairline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder span {
+    font-family: "Chivo Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    opacity: 0.7;
+  }
+  .r45 { aspect-ratio: 4 / 5; }
+  .r34 { aspect-ratio: 3 / 4; }
+  .r11 { aspect-ratio: 1 / 1; }
+
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  .caption .title { font-style: italic; font-size: 16px; color: var(--ink); }
+  .caption .meta { text-align: right; white-space: nowrap; }
+
+  section.text {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 24px 14vh;
+  }
+  section.text h2 {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "Chivo Mono", monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    margin-bottom: 24px;
+  }
+  section.text p {
+    max-width: 54ch;
+    margin-bottom: 1.2em;
+  }
+
+  footer {
+    border-top: 1px solid var(--hairline);
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 32px;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="mono">Chattanooga, Tennessee</span>
+  <h1>Lauri Moyle</h1>
+  <p class="sub">Paintings and layered line drawings — work in the tension between the hand-made and the machine-made.</p>
+</header>
+
+<main>
+  <figure class="work">
+    <div class="frame">
+      <img src="img/work-01.avif" width="465" height="620" alt="Expressionist portrait head in acrylic and marker — dark hair against an orange aura, framed" loading="eager">
+    </div>
+    <figcaption class="caption">
+      <span class="title">Untitled portrait head</span>
+      <span class="meta mono">Acrylic &amp; marker · 2026</span>
+    </figcaption>
+  </figure>
+
+  <figure class="work">
+    <div class="frame">
+      <img src="img/work-02.avif" width="465" height="620" alt="Line drawing of a face in transparent 3D-pen filament, suspended over paper" loading="lazy">
+    </div>
+    <figcaption class="caption">
+      <span class="title">Untitled</span>
+      <span class="meta mono">Transparent filament · 2026</span>
+    </figcaption>
+  </figure>
+
+  <figure class="work">
+    <div class="frame">
+      <div class="placeholder r34"><span>Artwork 03 — image pending</span></div>
+    </div>
+    <figcaption class="caption">
+      <span class="title">Untitled study</span>
+      <span class="meta mono">Acrylic on paper · 2025</span>
+    </figcaption>
+  </figure>
+
+  <figure class="work">
+    <div class="frame">
+      <img src="img/work-04.avif" width="465" height="620" alt="Portrait in layered paint marker — orange and turquoise strokes, purple hair" loading="lazy">
+    </div>
+    <figcaption class="caption">
+      <span class="title">Untitled</span>
+      <span class="meta mono">Paint marker · 2026</span>
+    </figcaption>
+  </figure>
+</main>
+
+<section class="text" id="about">
+  <h2>About</h2>
+  <p>Lauri Moyle is a visual artist in Chattanooga, Tennessee, working in acrylic, marker, and 3D-pen filament — portraits, mostly, built up in layers.</p>
+</section>
+
+<section class="text" id="shop">
+  <h2>Shop</h2>
+  <p>Selected works are coming to apparel. <span class="mono">Link soon.</span></p>
+</section>
+
+<footer>
+  <a href="https://www.instagram.com/notformelessnotvoid/" rel="me">Instagram — @notformelessnotvoid</a>
+  <span class="mono">© 2026 Lauri Moyle</span>
+</footer>
+
+</body>
+</html>
