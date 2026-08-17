@@ -1,0 +1,33 @@
+media:
+  input: assets/uploads
+  output: /assets/uploads
+content:
+  - name: artworks
+    label: Artworks
+    type: file
+    path: data/artworks.json
+    format: json
+    fields:
+      - name: artworks
+        label: Artworks
+        type: object
+        list: true
+        fields:
+          - { name: slug, label: URL name, type: string, required: true }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: medium, label: Medium, type: string, required: true }
+          - { name: year, label: Year, type: string, required: true }
+          - { name: image, label: Main image, type: image, required: true }
+          - { name: alt, label: Image description, type: text, required: true }
+          - { name: series, label: Series context, type: text }
+          - { name: statement, label: Artist statement, type: rich-text }
+          - name: documentation
+            label: Documentation
+            type: object
+            list: true
+            fields:
+              - { name: label, label: Label, type: string }
+              - { name: file, label: File, type: file }
+settings:
+  content:
+    merge: true
