@@ -1,1 +1,22 @@
-{"artworks":[{"slug":"untitled-portrait-head","title":"Untitled portrait head","medium":"Acrylic & marker","year":"2026","image":"/work-01.avif","alt":"Expressionist portrait head in acrylic and marker, dark hair against an orange aura","statement":"","series":"","documentation":[]},{"slug":"untitled-filament","title":"Untitled","medium":"Transparent filament","year":"2026","image":"/work-02.avif","alt":"Line drawing of a face in transparent 3D-pen filament suspended over paper","statement":"","series":"","documentation":[]},{"slug":"untitled-paint-marker","title":"Untitled","medium":"Paint marker","year":"2026","image":"/work-04.avif","alt":"Portrait in layered paint marker with orange and turquoise strokes and purple hair","statement":"","series":"","documentation":[]}]}
+{
+  "artworks": [
+    {
+      "slug": "sequence-2a",
+      "title": "sequence 2a",
+      "medium": "Acrylic & marker",
+      "year": "2026",
+      "image": "/assets/uploads/sculpture.png",
+      "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-2b",
+      "title": "sequence 2b",
+      "medium": "White and Transparent filament suspended to create shadow with light",
+      "year": "2026",
+      "image": "/work-02.avif",
+      "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
+      "series": "Faces and Shadows "
+    }
+  ]
+}
