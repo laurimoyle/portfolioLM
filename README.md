@@ -2,4 +2,4 @@
 
 Edit artwork from a phone or laptop at https://app.pagescms.org by signing in with GitHub and choosing this repository.
 
-The contact form uses the free Resend Vercel integration. Set RESEND_API_KEY, CONTACT_TO=Lauri@claimworth.art, and CONTACT_FROM=Lauri Moyle Portfolio <contact@send.laurimoyle.art>. Verify send.laurimoyle.art in Resend; this does not replace the Google Workspace mailbox at claimworth.art.
+The contact form uses Formspree's free form backend. Create a form that delivers to Lauri@claimworth.art, copy the ID from its endpoint, and add it to the Vercel project as FORMSPREE_FORM_ID. No Resend integration or sending-domain verification is required.
