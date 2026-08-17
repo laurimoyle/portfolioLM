@@ -14,14 +14,9 @@
       "title": "sequence 2b",
       "medium": "White and Transparent filament suspended to create shadow with light",
       "year": "2026",
-      "image": "/work-02.avif",
+      "image": "/assets/uploads/sculpture-1.png",
       "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
-      "series": "Faces and Shadows ",
-      "documentation": [
-        {
-          "file": "/assets/uploads/sculpture-1.png"
-        }
-      ]
+      "series": "Faces and Shadows "
     },
     {
       "slug": "red-mask",
