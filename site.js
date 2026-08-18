@@ -127,6 +127,7 @@ const homepageSeries = [
 ];
 
 const idForSeries = (series = '') => `series-${normalizeSeries(series).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
+const rotationClass = work => Number(work.rotation) % 360 === 180 ? ' is-rotated' : '';
 
 function setBacklight(image, frame) {
   const measure = () => {
@@ -208,7 +209,7 @@ async function home() {
     const story = seriesStories[group.name];
     const panel = document.createElement('section');
     const panelId = idForSeries(group.name);
-    const previews = group.works.slice(0, 3).map((work, index) => `<span class="series-preview-card" style="--preview-index:${index}"><img src="${esc(work.image)}" alt="" loading="lazy" decoding="async"></span>`).join('');
+    const previews = group.works.slice(0, 3).map((work, index) => `<span class="series-preview-card" style="--preview-index:${index}"><img class="series-preview-image${rotationClass(work)}" src="${esc(work.image)}" alt="" loading="lazy" decoding="async"></span>`).join('');
     panel.className = 'series-panel snap-panel';
     panel.id = panelId;
     panel.dataset.seriesNumber = group.number;
@@ -221,7 +222,7 @@ async function home() {
       workPanel.className = 'work-panel snap-panel';
       const priority = artworkIndex === 0 ? 'eager' : 'lazy';
       const fetchPriority = artworkIndex === 0 ? ' fetchpriority="high"' : '';
-      workPanel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-series">${esc(group.name)} · ${String(groupIndex + 1).padStart(2, '0')} / ${String(group.works.length).padStart(2, '0')}</span><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span><span class="art-open">Open work ↗</span></span></figcaption></figure></a>`;
+      workPanel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow${rotationClass(work)}" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-series">${esc(group.name)} · ${String(groupIndex + 1).padStart(2, '0')} / ${String(group.works.length).padStart(2, '0')}</span><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span><span class="art-open">Open work ↗</span></span></figcaption></figure></a>`;
       feed.append(workPanel);
       setBacklight(workPanel.querySelector('.art-image'), workPanel.querySelector('.art-frame'));
       lazyGlow(workPanel, feed);
@@ -253,7 +254,7 @@ function seriesStory(work, works) {
 
   const related = works.filter(item => normalizeSeries(item.series) === seriesName);
   const sections = story.sections.map((step, index) => `<div class="process-step"><span class="mono">0${index + 1}</span><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></div>`).join('');
-  const seriesWorks = related.map(item => `<a class="series-card${item.slug === work.slug ? ' current-work' : ''}" href="/work.html?id=${encodeURIComponent(item.slug)}"${item.slug === work.slug ? ' aria-current="page"' : ''}><span class="series-card-image"><img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy" decoding="async"></span><span class="series-card-copy"><strong>${esc(item.title)}</strong><span class="mono">${esc(item.medium)} · ${esc(item.year)}</span></span></a>`).join('');
+  const seriesWorks = related.map(item => `<a class="series-card${item.slug === work.slug ? ' current-work' : ''}" href="/work.html?id=${encodeURIComponent(item.slug)}"${item.slug === work.slug ? ' aria-current="page"' : ''}><span class="series-card-image"><img class="series-card-art${rotationClass(item)}" src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy" decoding="async"></span><span class="series-card-copy"><strong>${esc(item.title)}</strong><span class="mono">${esc(item.medium)} · ${esc(item.year)}</span></span></a>`).join('');
   const note = story.note ? `<p class="installation-note"><span class="mono">${esc(story.noteLabel)}</span>${esc(story.note)}</p>` : '';
 
   return `<section class="series-story" aria-labelledby="series-story-title"><div class="series-intro"><div><span class="mono">Series study</span><h2 id="series-story-title">${esc(seriesName)}</h2><p class="series-eyebrow">${esc(story.eyebrow)}</p></div><div class="series-statement">${paragraphs(story.statement)}</div></div><div class="process-grid" aria-label="${esc(story.sectionLabel)}">${sections}</div><div class="series-pair"><div class="section-heading"><span class="mono">${esc(story.galleryLabel)}</span><p>${esc(story.galleryCopy)}</p></div><div class="series-grid">${seriesWorks}</div></div>${note}</section>`;
@@ -273,7 +274,7 @@ async function detail() {
   document.title = `${work.title} — Lauri Moyle`;
   const documents = (work.documentation || []).filter(item => item.file).map(documentationItem).join('');
   const individualStatement = work.statement ? `<div class="statement">${paragraphs(work.statement)}</div>` : (seriesStories[normalizeSeries(work.series)] ? '' : '<p class="muted">Statement and documentation forthcoming.</p>');
-  root.innerHTML = `<article><div class="detail-image"><img src="${esc(work.image)}" alt="${esc(work.alt)}" decoding="async" fetchpriority="high"></div><div class="detail-copy"><span class="mono">${esc(work.medium)} · ${esc(work.year)}</span><h1>${esc(work.title)}</h1>${work.series ? `<p class="series">${esc(normalizeSeries(work.series))}</p>` : ''}${individualStatement}</div></article>${seriesStory(work, works)}${documents ? `<section class="documentation" aria-labelledby="documentation-title"><div class="section-heading"><h2 id="documentation-title">Documentation</h2><p>Process, installation, and supporting material.</p></div><div class="documentation-grid">${documents}</div></section>` : ''}`;
+  root.innerHTML = `<article><div class="detail-image"><img class="detail-art${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" decoding="async" fetchpriority="high"></div><div class="detail-copy"><span class="mono">${esc(work.medium)} · ${esc(work.year)}</span><h1>${esc(work.title)}</h1>${work.series ? `<p class="series">${esc(normalizeSeries(work.series))}</p>` : ''}${individualStatement}</div></article>${seriesStory(work, works)}${documents ? `<section class="documentation" aria-labelledby="documentation-title"><div class="section-heading"><h2 id="documentation-title">Documentation</h2><p>Process, installation, and supporting material.</p></div><div class="documentation-grid">${documents}</div></section>` : ''}`;
 }
 
 function contact() {

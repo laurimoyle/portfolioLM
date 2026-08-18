@@ -60,7 +60,8 @@
       "medium": "Mixed media on paper",
       "year": "2026",
       "image": "/assets/uploads/inverted-portrait-16.jpg",
-      "alt": "Inverted orange, cyan, violet, and white portrait photographed on a wood floor",
+      "alt": "Orange, cyan, violet, and white expressionist portrait photographed on a wood floor",
+      "rotation": 180,
       "series": "Inversions"
     },
     {
