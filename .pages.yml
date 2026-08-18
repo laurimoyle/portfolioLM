@@ -19,6 +19,7 @@ content:
           - { name: year, label: Year, type: string, required: true }
           - { name: image, label: Main image, type: image, required: true }
           - { name: alt, label: Image description, type: text, required: true }
+          - { name: featured, label: Show on homepage, type: boolean, default: true }
           - { name: series, label: Series context, type: text }
           - { name: statement, label: Artist statement, type: rich-text }
           - name: documentation
