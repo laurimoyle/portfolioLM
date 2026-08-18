@@ -18,7 +18,8 @@ const seriesStories = {
   'Faces and Shadows': {
     eyebrow: 'Painted image · suspended drawing · projected shadow',
     statement: 'Faces and Shadows begins with a drawn or painted face and a second drawing made as a transparent filament construction. Suspended from the wall and lit from a deliberate angle, the construction throws another portrait onto the receiving surface. One origin produces two images that remain related but do not entirely agree. The light is not presentation around the work; it is one of its materials.',
-    process: [
+    sectionLabel: 'How the work is made',
+    sections: [
       {
         title: 'Image',
         text: 'A painted face establishes the first reading: direct, physical, and held on the surface.'
@@ -32,7 +33,73 @@ const seriesStories = {
         text: 'A precisely placed light completes the work by projecting a second, altered face.'
       }
     ],
-    installation: 'The angle, distance, and focus of the light determine the scale and sharpness of the projected face. The work should be encountered—and documented—both as a physical construction and under its intended light.'
+    galleryLabel: 'The pair',
+    galleryCopy: 'Move between the painted image and its constructed counterpart.',
+    noteLabel: 'Installation note',
+    note: 'The angle, distance, and focus of the light determine the scale and sharpness of the projected face. The work should be encountered—and documented—both as a physical construction and under its intended light.'
+  },
+  'Split Fields': {
+    eyebrow: 'Divided color · joined likeness · unstable symmetry',
+    statement: 'Split Fields uses color as a structural force. Warm and cool planes divide the face, but the portrait remains held together by the gaze, the dark contour, and small passages where one side leaks into the other. Each work is less a stable likeness than a negotiation between competing versions of the same person.',
+    sectionLabel: 'Chromatic structure',
+    sections: [
+      {
+        title: 'Divide',
+        text: 'A central break establishes two distinct color climates within one face.'
+      },
+      {
+        title: 'Temperature',
+        text: 'Warm and cool passages carry mood as strongly as the drawn features.'
+      },
+      {
+        title: 'Rejoin',
+        text: 'Contour, gaze, and repeated marks pull the divided portrait back into a single presence.'
+      }
+    ],
+    galleryLabel: 'Works in the series',
+    galleryCopy: 'Three portraits testing how much division a face can hold without losing its identity.'
+  },
+  Inversions: {
+    eyebrow: 'Turned image · displaced anatomy · interior pressure',
+    statement: 'Inversions begins by turning the portrait away from its expected orientation. Eyes, mouths, hair, and surrounding marks are then allowed to reorganize into another kind of figure. The works hover between mask, body, and interior landscape; recognition arrives, breaks apart, and returns in a changed form.',
+    sectionLabel: 'Formal structure',
+    sections: [
+      {
+        title: 'Turn',
+        text: 'Rotation interrupts the viewer’s first, habitual reading of the face.'
+      },
+      {
+        title: 'Reconstruct',
+        text: 'Facial features become independent shapes that can migrate, double, or exchange roles.'
+      },
+      {
+        title: 'Pressure',
+        text: 'Dense color and line make the portrait feel compressed from both inside and outside.'
+      }
+    ],
+    galleryLabel: 'Published work',
+    galleryCopy: 'The first published work from a larger group of turned and reconstructed heads.'
+  },
+  Witnesses: {
+    eyebrow: 'Frontal address · vigilance · encounter',
+    statement: 'Witnesses gathers figures whose gaze is the primary event. Their faces are exaggerated, guarded, comic, or severe, yet each insists on looking back. The viewer is not given a neutral subject to observe; the encounter remains reciprocal, and sometimes uncomfortable.',
+    sectionLabel: 'Ways of looking',
+    sections: [
+      {
+        title: 'Gaze',
+        text: 'Eyes hold the composition and establish an immediate relationship with the viewer.'
+      },
+      {
+        title: 'Distance',
+        text: 'The close framing removes most context and makes looking itself the subject.'
+      },
+      {
+        title: 'Character',
+        text: 'Line, color, and distortion create presence without resolving the figure into biography.'
+      }
+    ],
+    galleryLabel: 'Works in the series',
+    galleryCopy: 'Portraits united by their insistence on returning the viewer’s attention.'
   }
 };
 
@@ -90,14 +157,14 @@ function lazyGlow(panel, feed) {
 
 async function home() {
   const feed = document.querySelector('#work-feed');
-  const works = await load();
+  const works = (await load()).filter(work => work.featured !== false);
 
   works.forEach((work, index) => {
     const panel = document.createElement('section');
     panel.className = 'work-panel snap-panel';
     const priority = index === 0 ? 'eager' : 'lazy';
     const fetchPriority = index === 0 ? ' fetchpriority="high"' : '';
-    panel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span></span></figcaption></figure></a>`;
+    panel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-year">${esc(work.year)}</span>${work.series ? `<span class="art-series">${esc(normalizeSeries(work.series))}</span>` : ''}<span>${esc(work.medium)}</span></span></figcaption></figure></a>`;
     feed.append(panel);
     setBacklight(panel.querySelector('.art-image'), panel.querySelector('.art-frame'));
     lazyGlow(panel, feed);
@@ -126,10 +193,11 @@ function seriesStory(work, works) {
   if (!story) return '';
 
   const related = works.filter(item => normalizeSeries(item.series) === seriesName);
-  const process = story.process.map((step, index) => `<div class="process-step"><span class="mono">0${index + 1}</span><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></div>`).join('');
-  const pair = related.map(item => `<a class="series-card${item.slug === work.slug ? ' current-work' : ''}" href="/work.html?id=${encodeURIComponent(item.slug)}"${item.slug === work.slug ? ' aria-current="page"' : ''}><span class="series-card-image"><img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy" decoding="async"></span><span class="series-card-copy"><strong>${esc(item.title)}</strong><span class="mono">${esc(item.medium)} · ${esc(item.year)}</span></span></a>`).join('');
+  const sections = story.sections.map((step, index) => `<div class="process-step"><span class="mono">0${index + 1}</span><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></div>`).join('');
+  const seriesWorks = related.map(item => `<a class="series-card${item.slug === work.slug ? ' current-work' : ''}" href="/work.html?id=${encodeURIComponent(item.slug)}"${item.slug === work.slug ? ' aria-current="page"' : ''}><span class="series-card-image"><img src="${esc(item.image)}" alt="${esc(item.alt)}" loading="lazy" decoding="async"></span><span class="series-card-copy"><strong>${esc(item.title)}</strong><span class="mono">${esc(item.medium)} · ${esc(item.year)}</span></span></a>`).join('');
+  const note = story.note ? `<p class="installation-note"><span class="mono">${esc(story.noteLabel)}</span>${esc(story.note)}</p>` : '';
 
-  return `<section class="series-story" aria-labelledby="series-story-title"><div class="series-intro"><div><span class="mono">Series study</span><h2 id="series-story-title">${esc(seriesName)}</h2><p class="series-eyebrow">${esc(story.eyebrow)}</p></div><div class="series-statement">${paragraphs(story.statement)}</div></div><div class="process-grid" aria-label="How the work is made">${process}</div><div class="series-pair"><div class="section-heading"><span class="mono">The pair</span><p>Move between the painted image and its constructed counterpart.</p></div><div class="series-grid">${pair}</div></div><p class="installation-note"><span class="mono">Installation note</span>${esc(story.installation)}</p></section>`;
+  return `<section class="series-story" aria-labelledby="series-story-title"><div class="series-intro"><div><span class="mono">Series study</span><h2 id="series-story-title">${esc(seriesName)}</h2><p class="series-eyebrow">${esc(story.eyebrow)}</p></div><div class="series-statement">${paragraphs(story.statement)}</div></div><div class="process-grid" aria-label="${esc(story.sectionLabel)}">${sections}</div><div class="series-pair"><div class="section-heading"><span class="mono">${esc(story.galleryLabel)}</span><p>${esc(story.galleryCopy)}</p></div><div class="series-grid">${seriesWorks}</div></div>${note}</section>`;
 }
 
 async function detail() {
