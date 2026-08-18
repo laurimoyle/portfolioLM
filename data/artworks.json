@@ -19,6 +19,69 @@
       "series": "Faces and Shadows"
     },
     {
+      "slug": "sequence-3a",
+      "title": "sequence 3a",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-3a.jpg",
+      "alt": "Warm red and orange portrait of a bald, bearded man with green eyes and an elaborate moustache",
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-3b",
+      "title": "sequence 3b",
+      "medium": "White and transparent filament with projected shadow",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-3b-shadow.jpg",
+      "alt": "Transparent filament portrait suspended above paper so the sculpted line and its projected shadow form two faces",
+      "series": "Faces and Shadows",
+      "documentation": [
+        {
+          "label": "Filament construction, unlit",
+          "file": "/assets/uploads/sequence-3b-object.jpg"
+        },
+        {
+          "label": "Construction aligned with its shadow",
+          "file": "/assets/uploads/sequence-3b-registration.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sequence-4a",
+      "title": "sequence 4a",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-4a.jpg",
+      "alt": "Elongated mixed-media portrait with wide black eyes and softly washed peach, gray, and rose passages",
+      "rotation": 180,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-4b",
+      "title": "sequence 4b",
+      "medium": "Black filament on translucent support",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-4b.jpg",
+      "alt": "Black filament translation of an elongated face built across a translucent rectangular support",
+      "rotation": 180,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-5",
+      "title": "sequence 5",
+      "medium": "Mixed media and filament on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-5-alignment.jpg",
+      "alt": "Black and white filament portrait aligned over a pink and orange painted face",
+      "series": "Faces and Shadows",
+      "documentation": [
+        {
+          "label": "Alignment and separation study",
+          "file": "/assets/uploads/sequence-5-process.mp4"
+        }
+      ]
+    },
+    {
       "slug": "divided-light",
       "title": "Divided Light",
       "medium": "Mixed media",
@@ -65,6 +128,26 @@
       "series": "Inversions"
     },
     {
+      "slug": "inversion-study-ii",
+      "title": "Inversion Study II",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-ii.jpg",
+      "alt": "Mauve and blue mask-like portrait with orange contours and doubled facial features",
+      "rotation": 180,
+      "series": "Inversions"
+    },
+    {
+      "slug": "inversion-study-iii",
+      "title": "Inversion Study III",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-iii.jpg",
+      "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
+      "rotation": 180,
+      "series": "Inversions"
+    },
+    {
       "slug": "red-mask",
       "title": "Red Mask",
       "medium": "Mixed media on paper",
@@ -100,6 +183,15 @@
       "alt": "Pale frontal portrait marked with fine yellow and violet lines and a small bird at the shoulder",
       "series": "Witnesses",
       "featured": false
+    },
+    {
+      "slug": "soft-field-i",
+      "title": "Soft Field I",
+      "medium": "Mixed media on canvas",
+      "year": "2026",
+      "image": "/assets/uploads/soft-field-i.jpg",
+      "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
+      "series": "Soft Fields"
     }
   ]
 }

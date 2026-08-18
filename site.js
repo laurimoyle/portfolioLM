@@ -33,8 +33,8 @@ const seriesStories = {
         text: 'A precisely placed light completes the work by projecting a second, altered face.'
       }
     ],
-    galleryLabel: 'The pair',
-    galleryCopy: 'Move between the painted image and its constructed counterpart.',
+    galleryLabel: 'The sequences',
+    galleryCopy: 'Move through successive painted images, filament constructions, and the shadows that complete them.',
     noteLabel: 'Installation note',
     note: 'The angle, distance, and focus of the light determine the scale and sharpness of the projected face. The work should be encountered—and documented—both as a physical construction and under its intended light.'
   },
@@ -77,8 +77,8 @@ const seriesStories = {
         text: 'Dense color and line make the portrait feel compressed from both inside and outside.'
       }
     ],
-    galleryLabel: 'Published work',
-    galleryCopy: 'The first published work from a larger group of turned and reconstructed heads.'
+    galleryLabel: 'Works in the series',
+    galleryCopy: 'Turned and reconstructed heads in which features refuse a single stable position.'
   },
   Witnesses: {
     eyebrow: 'Frontal address · vigilance · encounter',
@@ -100,6 +100,27 @@ const seriesStories = {
     ],
     galleryLabel: 'Works in the series',
     galleryCopy: 'Portraits united by their insistence on returning the viewer’s attention.'
+  },
+  'Soft Fields': {
+    eyebrow: 'Atmosphere · suspended marks · emerging form',
+    statement: 'Soft Fields lets color gather before it becomes a figure. Broad, translucent passages overlap without a hard contour, while small raised marks interrupt the surface like fragments of a face or signals moving through atmosphere. The work remains open between abstraction and recognition.',
+    sectionLabel: 'Field structure',
+    sections: [
+      {
+        title: 'Gather',
+        text: 'Washed fields of color accumulate through overlap rather than outline.'
+      },
+      {
+        title: 'Interrupt',
+        text: 'Small material marks puncture the softness and alter the scale of the field.'
+      },
+      {
+        title: 'Emerge',
+        text: 'The composition holds recognizable form just below the threshold of a fixed image.'
+      }
+    ],
+    galleryLabel: 'Works in the series',
+    galleryCopy: 'An opening study in color, atmosphere, and forms that have not yet settled into a face.'
   }
 };
 
@@ -123,6 +144,11 @@ const homepageSeries = [
     name: 'Witnesses',
     number: '04',
     line: 'Figures whose gaze makes looking a reciprocal act.'
+  },
+  {
+    name: 'Soft Fields',
+    number: '05',
+    line: 'Color gathers at the edge of recognition.'
   }
 ];
 
