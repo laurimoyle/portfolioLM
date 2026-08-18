@@ -103,6 +103,31 @@ const seriesStories = {
   }
 };
 
+const homepageSeries = [
+  {
+    name: 'Faces and Shadows',
+    number: '01',
+    line: 'One face becomes image, object, and projected double.'
+  },
+  {
+    name: 'Split Fields',
+    number: '02',
+    line: 'Portraits held together across competing fields of color.'
+  },
+  {
+    name: 'Inversions',
+    number: '03',
+    line: 'Faces turned until anatomy becomes an interior landscape.'
+  },
+  {
+    name: 'Witnesses',
+    number: '04',
+    line: 'Figures whose gaze makes looking a reciprocal act.'
+  }
+];
+
+const idForSeries = (series = '') => `series-${normalizeSeries(series).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}`;
+
 function setBacklight(image, frame) {
   const measure = () => {
     try {
@@ -159,15 +184,49 @@ async function home() {
   const feed = document.querySelector('#work-feed');
   const works = (await load()).filter(work => work.featured !== false);
 
-  works.forEach((work, index) => {
+  const configured = homepageSeries
+    .map(series => ({ ...series, works: works.filter(work => normalizeSeries(work.series) === series.name) }))
+    .filter(series => series.works.length);
+  const configuredNames = new Set(configured.map(series => series.name));
+  const additionalNames = [...new Set(works.map(work => normalizeSeries(work.series)).filter(name => name && !configuredNames.has(name)))];
+  const groups = configured.concat(additionalNames.map((name, index) => ({
+    name,
+    number: String(configured.length + index + 1).padStart(2, '0'),
+    line: 'A current group of related works.',
+    works: works.filter(work => normalizeSeries(work.series) === name)
+  })));
+  const ungrouped = works.filter(work => !normalizeSeries(work.series));
+  if (ungrouped.length) groups.push({
+    name: 'Current Works',
+    number: String(groups.length + 1).padStart(2, '0'),
+    line: 'Individual works and studies.',
+    works: ungrouped
+  });
+
+  let artworkIndex = 0;
+  groups.forEach(group => {
+    const story = seriesStories[group.name];
     const panel = document.createElement('section');
-    panel.className = 'work-panel snap-panel';
-    const priority = index === 0 ? 'eager' : 'lazy';
-    const fetchPriority = index === 0 ? ' fetchpriority="high"' : '';
-    panel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-year">${esc(work.year)}</span>${work.series ? `<span class="art-series">${esc(normalizeSeries(work.series))}</span>` : ''}<span>${esc(work.medium)}</span></span></figcaption></figure></a>`;
+    const panelId = idForSeries(group.name);
+    const previews = group.works.slice(0, 3).map((work, index) => `<span class="series-preview-card" style="--preview-index:${index}"><img src="${esc(work.image)}" alt="" loading="lazy" decoding="async"></span>`).join('');
+    panel.className = 'series-panel snap-panel';
+    panel.id = panelId;
+    panel.dataset.seriesNumber = group.number;
+    panel.setAttribute('aria-labelledby', `${panelId}-title`);
+    panel.innerHTML = `<div class="series-home-copy"><span class="mono series-number">Series ${esc(group.number)} · ${group.works.length} ${group.works.length === 1 ? 'work' : 'works'}</span><h2 id="${panelId}-title">${esc(group.name)}</h2><p class="series-home-line">${esc(group.line)}</p>${story ? `<div class="series-home-statement">${paragraphs(story.statement)}</div>` : ''}<span class="mono series-continue">Continue into the series ↓</span></div><div class="series-preview" aria-hidden="true">${previews}</div>`;
     feed.append(panel);
-    setBacklight(panel.querySelector('.art-image'), panel.querySelector('.art-frame'));
-    lazyGlow(panel, feed);
+
+    group.works.forEach((work, groupIndex) => {
+      const workPanel = document.createElement('section');
+      workPanel.className = 'work-panel snap-panel';
+      const priority = artworkIndex === 0 ? 'eager' : 'lazy';
+      const fetchPriority = artworkIndex === 0 ? ' fetchpriority="high"' : '';
+      workPanel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-series">${esc(group.name)} · ${String(groupIndex + 1).padStart(2, '0')} / ${String(group.works.length).padStart(2, '0')}</span><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span><span class="art-open">Open work ↗</span></span></figcaption></figure></a>`;
+      feed.append(workPanel);
+      setBacklight(workPanel.querySelector('.art-image'), workPanel.querySelector('.art-frame'));
+      lazyGlow(workPanel, feed);
+      artworkIndex++;
+    });
   });
 }
 
