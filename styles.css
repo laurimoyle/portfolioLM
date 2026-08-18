@@ -240,28 +240,33 @@ figure {
 }
 
 .art-frame .art-glow {
+  --art-rotation: 0deg;
   position: absolute;
   z-index: -2;
   width: 88%;
   height: 88%;
   opacity: var(--glow-opacity);
   filter: blur(38px) saturate(1.2) brightness(1.12);
-  transform: scale(1.035);
+  transform: rotate(var(--art-rotation)) scale(1.035);
 }
 
 .art-frame .art-image {
+  --art-rotation: 0deg;
   position: absolute;
   z-index: 1;
   inset: 0;
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .48));
+  transform: rotate(var(--art-rotation));
   transition: transform .7s, filter .7s;
 }
+
+.art-frame .is-rotated { --art-rotation: 180deg; }
 
 .art-frame.is-dark .art-image {
   filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .55)) drop-shadow(0 0 18px rgba(var(--glow), .16));
 }
 
-.art-link:hover .art-image { transform: scale(1.012); }
+.art-link:hover .art-image { transform: rotate(var(--art-rotation)) scale(1.012); }
 
 figcaption {
   display: grid;
@@ -355,6 +360,10 @@ button {
   margin: auto;
   filter: drop-shadow(0 18px 34px rgba(0, 0, 0, .5));
 }
+
+.series-preview-image.is-rotated,
+.series-card-art.is-rotated,
+.detail-art.is-rotated { transform: rotate(180deg); }
 
 .detail-copy { position: sticky; top: 130px; }
 .detail-copy h1 { font-size: clamp(36px, 5vw, 58px); }
