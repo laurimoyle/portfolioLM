@@ -177,6 +177,7 @@ figcaption {
 
 .art-meta { display: grid; gap: 5px; }
 .art-year { color: var(--i); }
+.art-series { color: #c5bbad; }
 
 .about-layout {
   max-width: 1100px;
