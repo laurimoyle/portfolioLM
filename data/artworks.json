@@ -16,52 +16,7 @@
       "year": "2026",
       "image": "/assets/uploads/sculpture-1.png",
       "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
-      "series": "Faces and Shadows "
-    },
-    {
-      "slug": "red-mask",
-      "title": "Red Mask",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/red-mask.webp",
-      "alt": "Angular red portrait mask with black recessed eyes against an orange ground",
-      "series": "Portrait Studies"
-    },
-    {
-      "slug": "the-watchman",
-      "title": "The Watchman",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/the-watchman.webp",
-      "alt": "Linear portrait of a bald, bearded man with an elaborate moustache and green eyes",
-      "series": "Portrait Studies"
-    },
-    {
-      "slug": "inward-bloom",
-      "title": "Inward Bloom",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/inward-bloom.webp",
-      "alt": "Vivid symmetrical face built from eyes, lips, leaves, and curling fluorescent lines",
-      "series": "Portrait Studies"
-    },
-    {
-      "slug": "messenger",
-      "title": "Messenger",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/messenger.webp",
-      "alt": "Pale frontal portrait marked with fine yellow and violet lines and a small bird at the shoulder",
-      "series": "Portrait Studies"
-    },
-    {
-      "slug": "electric-witness",
-      "title": "Electric Witness",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/electric-witness.webp",
-      "alt": "Brightly colored expressionist profile with wide eyes and green upright hair",
-      "series": "Portrait Studies"
+      "series": "Faces and Shadows"
     },
     {
       "slug": "divided-light",
@@ -70,7 +25,7 @@
       "year": "2026",
       "image": "/assets/uploads/divided-light.webp",
       "alt": "Frontal portrait divided into warm orange and cool blue planes against a blue ground",
-      "series": "Portrait Studies"
+      "series": "Split Fields"
     },
     {
       "slug": "green-room",
@@ -79,7 +34,7 @@
       "year": "2026",
       "image": "/assets/uploads/green-room.webp",
       "alt": "Asymmetrical portrait with a dark sculpted hairstyle against a turquoise green ground",
-      "series": "Portrait Studies"
+      "series": "Split Fields"
     },
     {
       "slug": "magenta-portrait",
@@ -88,7 +43,53 @@
       "year": "2026",
       "image": "/assets/uploads/magenta-portrait.webp",
       "alt": "Frontal dark-haired portrait with divided pink and yellow facial planes against magenta",
-      "series": "Portrait Studies"
+      "series": "Split Fields"
+    },
+    {
+      "slug": "inward-bloom",
+      "title": "Inward Bloom",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inward-bloom.webp",
+      "alt": "Vivid symmetrical face built from eyes, lips, leaves, and curling fluorescent lines",
+      "series": "Inversions"
+    },
+    {
+      "slug": "red-mask",
+      "title": "Red Mask",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-mask.webp",
+      "alt": "Angular red portrait mask with black recessed eyes against an orange ground",
+      "series": "Witnesses"
+    },
+    {
+      "slug": "electric-witness",
+      "title": "Electric Witness",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/electric-witness.webp",
+      "alt": "Brightly colored expressionist profile with wide eyes and green upright hair",
+      "series": "Witnesses"
+    },
+    {
+      "slug": "the-watchman",
+      "title": "The Watchman",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/the-watchman.webp",
+      "alt": "Linear portrait of a bald, bearded man with an elaborate moustache and green eyes",
+      "series": "Witnesses"
+    },
+    {
+      "slug": "messenger",
+      "title": "Messenger",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/messenger.webp",
+      "alt": "Pale frontal portrait marked with fine yellow and violet lines and a small bird at the shoulder",
+      "series": "Witnesses",
+      "featured": false
     }
   ]
 }
