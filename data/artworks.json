@@ -19,22 +19,14 @@
       "series": "Faces and Shadows"
     },
     {
-      "slug": "sequence-3a",
-      "title": "sequence 3a",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/sequence-3a.jpg",
-      "alt": "Warm red and orange portrait of a bald, bearded man with green eyes and an elaborate moustache",
-      "series": "Faces and Shadows"
-    },
-    {
-      "slug": "sequence-3b",
-      "title": "sequence 3b",
+      "slug": "sequence-2c",
+      "title": "sequence 2c",
       "medium": "White and transparent filament with projected shadow",
       "year": "2026",
       "image": "/assets/uploads/sequence-3b-shadow.jpg",
       "alt": "Transparent filament portrait suspended above paper so the sculpted line and its projected shadow form two faces",
       "series": "Faces and Shadows",
+      "statement": "This filament construction is the three-dimensional counterpart to The Watchman, which appears in Witnesses. Here, light separates the object from the projected portrait it produces.",
       "documentation": [
         {
           "label": "Filament construction, unlit",
