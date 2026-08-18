@@ -45,6 +45,36 @@
       ]
     },
     {
+      "slug": "sequence-1a",
+      "title": "sequence 1a",
+      "medium": "acrylic on paper and 3D hand printed filament",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament on top of the watcher.jpg",
+      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament ",
+      "rotation": 0,
+      "featured": true
+    },
+    {
+      "slug": "sequence-1b",
+      "title": "sequence-1b",
+      "medium": "handprinted 3D filament ",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament shadow.jpg",
+      "alt": "Line drawing of a face in white and transparent 3D-pen filament suspended over paper with shadow creating the 3rd image",
+      "rotation": 0,
+      "featured": true
+    },
+    {
+      "slug": "sequence-1c",
+      "title": "sequence 1c",
+      "medium": "hand printed 3d filament suspended on top of wood",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament solo.jpg",
+      "alt": "Transparent filament portrait suspended above wood panel",
+      "rotation": 0,
+      "featured": true
+    },
+    {
       "slug": "sequence-4a",
       "title": "sequence 4a",
       "medium": "Mixed media on paper",
