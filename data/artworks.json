@@ -7,6 +7,8 @@
       "year": "2026",
       "image": "/assets/uploads/sequence 1a-1.jpg",
       "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
+      "rotation": 0,
+      "featured": true,
       "series": "Faces and Shadows"
     },
     {
@@ -16,6 +18,8 @@
       "year": "2026",
       "image": "/assets/uploads/sculpture-1.png",
       "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
+      "rotation": 0,
+      "featured": true,
       "series": "Faces and Shadows"
     },
     {
@@ -25,6 +29,8 @@
       "year": "2026",
       "image": "/assets/uploads/sequence-3b-shadow.jpg",
       "alt": "Transparent filament portrait suspended above paper so the sculpted line and its projected shadow form two faces",
+      "rotation": 0,
+      "featured": true,
       "series": "Faces and Shadows",
       "statement": "This filament construction is the three-dimensional counterpart to The Watchman, which appears in Witnesses. Here, light separates the object from the projected portrait it produces.",
       "documentation": [
@@ -46,6 +52,7 @@
       "image": "/assets/uploads/sequence-4a.jpg",
       "alt": "Elongated mixed-media portrait with wide black eyes and softly washed peach, gray, and rose passages",
       "rotation": 180,
+      "featured": true,
       "series": "Faces and Shadows"
     },
     {
@@ -56,6 +63,7 @@
       "image": "/assets/uploads/sequence-4b.jpg",
       "alt": "Black filament translation of an elongated face built across a translucent rectangular support",
       "rotation": 180,
+      "featured": true,
       "series": "Faces and Shadows"
     },
     {
@@ -65,6 +73,8 @@
       "year": "2026",
       "image": "/assets/uploads/sequence-5-alignment.jpg",
       "alt": "Black and white filament portrait aligned over a pink and orange painted face",
+      "rotation": 0,
+      "featured": true,
       "series": "Faces and Shadows",
       "documentation": [
         {
@@ -80,6 +90,8 @@
       "year": "2026",
       "image": "/assets/uploads/divided-light.webp",
       "alt": "Frontal portrait divided into warm orange and cool blue planes against a blue ground",
+      "rotation": 0,
+      "featured": true,
       "series": "Split Fields"
     },
     {
@@ -89,15 +101,8 @@
       "year": "2026",
       "image": "/assets/uploads/green-room.webp",
       "alt": "Asymmetrical portrait with a dark sculpted hairstyle against a turquoise green ground",
-      "series": "Split Fields"
-    },
-    {
-      "slug": "magenta-portrait",
-      "title": "Magenta Portrait",
-      "medium": "Mixed media",
-      "year": "2026",
-      "image": "/assets/uploads/magenta-portrait.webp",
-      "alt": "Frontal dark-haired portrait with divided pink and yellow facial planes against magenta",
+      "rotation": 0,
+      "featured": true,
       "series": "Split Fields"
     },
     {
@@ -107,6 +112,8 @@
       "year": "2026",
       "image": "/assets/uploads/inward-bloom.webp",
       "alt": "Vivid symmetrical face built from eyes, lips, leaves, and curling fluorescent lines",
+      "rotation": 0,
+      "featured": true,
       "series": "Inversions"
     },
     {
@@ -117,6 +124,7 @@
       "image": "/assets/uploads/inverted-portrait-16.jpg",
       "alt": "Orange, cyan, violet, and white expressionist portrait photographed on a wood floor",
       "rotation": 180,
+      "featured": true,
       "series": "Inversions"
     },
     {
@@ -127,6 +135,7 @@
       "image": "/assets/uploads/inversion-study-ii.jpg",
       "alt": "Mauve and blue mask-like portrait with orange contours and doubled facial features",
       "rotation": 180,
+      "featured": true,
       "series": "Inversions"
     },
     {
@@ -137,6 +146,7 @@
       "image": "/assets/uploads/inversion-study-iii.jpg",
       "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
       "rotation": 180,
+      "featured": true,
       "series": "Inversions"
     },
     {
@@ -146,6 +156,8 @@
       "year": "2026",
       "image": "/assets/uploads/red-mask.webp",
       "alt": "Angular red portrait mask with black recessed eyes against an orange ground",
+      "rotation": 0,
+      "featured": true,
       "series": "Witnesses"
     },
     {
@@ -155,6 +167,8 @@
       "year": "2026",
       "image": "/assets/uploads/electric-witness.webp",
       "alt": "Brightly colored expressionist profile with wide eyes and green upright hair",
+      "rotation": 0,
+      "featured": true,
       "series": "Witnesses"
     },
     {
@@ -164,6 +178,8 @@
       "year": "2026",
       "image": "/assets/uploads/the-watchman.webp",
       "alt": "Linear portrait of a bald, bearded man with an elaborate moustache and green eyes",
+      "rotation": 0,
+      "featured": true,
       "series": "Witnesses"
     },
     {
@@ -173,8 +189,9 @@
       "year": "2026",
       "image": "/assets/uploads/messenger.webp",
       "alt": "Pale frontal portrait marked with fine yellow and violet lines and a small bird at the shoulder",
-      "series": "Witnesses",
-      "featured": false
+      "rotation": 0,
+      "featured": false,
+      "series": "Witnesses"
     },
     {
       "slug": "soft-field-i",
@@ -183,6 +200,8 @@
       "year": "2026",
       "image": "/assets/uploads/soft-field-i.jpg",
       "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
+      "rotation": 0,
+      "featured": true,
       "series": "Soft Fields"
     }
   ]
