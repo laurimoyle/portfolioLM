@@ -231,6 +231,25 @@ async function home() {
   });
 
   let artworkIndex = 0;
+  const appendWorkPanel = (work, group, groupIndex, opening = false) => {
+    const workPanel = document.createElement('section');
+    workPanel.className = `work-panel snap-panel${opening ? ' opening-work' : ''}`;
+    if (opening) workPanel.id = 'opening-work';
+    const priority = artworkIndex === 0 ? 'eager' : 'lazy';
+    const fetchPriority = artworkIndex === 0 ? ' fetchpriority="high"' : '';
+    workPanel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow${rotationClass(work)}" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-series">${esc(group.name)} · ${String(groupIndex + 1).padStart(2, '0')} / ${String(group.works.length).padStart(2, '0')}</span><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span><span class="art-open">Open work ↗</span></span></figcaption></figure></a>`;
+    feed.append(workPanel);
+    setBacklight(workPanel.querySelector('.art-image'), workPanel.querySelector('.art-frame'));
+    lazyGlow(workPanel, feed);
+    artworkIndex++;
+  };
+
+  const openingWork = works.find(work => work.slug === 'sequence-2a');
+  const openingGroup = openingWork && groups.find(group => group.works.some(work => work.slug === openingWork.slug));
+  if (openingWork && openingGroup) {
+    appendWorkPanel(openingWork, openingGroup, openingGroup.works.findIndex(work => work.slug === openingWork.slug), true);
+  }
+
   groups.forEach(group => {
     const story = seriesStories[group.name];
     const panel = document.createElement('section');
@@ -244,15 +263,8 @@ async function home() {
     feed.append(panel);
 
     group.works.forEach((work, groupIndex) => {
-      const workPanel = document.createElement('section');
-      workPanel.className = 'work-panel snap-panel';
-      const priority = artworkIndex === 0 ? 'eager' : 'lazy';
-      const fetchPriority = artworkIndex === 0 ? ' fetchpriority="high"' : '';
-      workPanel.innerHTML = `<a class="art-link" href="/work.html?id=${encodeURIComponent(work.slug)}"><figure><div class="art-frame"><img class="art-glow${rotationClass(work)}" data-src="${esc(work.image)}" alt="" aria-hidden="true" loading="lazy" decoding="async"><img class="art-image${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" loading="${priority}" decoding="async"${fetchPriority}></div><figcaption><span class="art-title">${esc(work.title)}</span><span class="art-meta mono"><span class="art-series">${esc(group.name)} · ${String(groupIndex + 1).padStart(2, '0')} / ${String(group.works.length).padStart(2, '0')}</span><span class="art-year">${esc(work.year)}</span><span>${esc(work.medium)}</span><span class="art-open">Open work ↗</span></span></figcaption></figure></a>`;
-      feed.append(workPanel);
-      setBacklight(workPanel.querySelector('.art-image'), workPanel.querySelector('.art-frame'));
-      lazyGlow(workPanel, feed);
-      artworkIndex++;
+      if (work.slug === openingWork?.slug) return;
+      appendWorkPanel(work, group, groupIndex);
     });
   });
 }
