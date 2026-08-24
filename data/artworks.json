@@ -114,6 +114,32 @@
       ]
     },
     {
+      "slug": "sequence-6",
+      "title": "sequence 6",
+      "medium": "Paint marker and mixed media on translucent paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-6-backlit.webp",
+      "alt": "Backlit translucent-paper portrait whose pale face changes to slate blue as a hand and its shadow enter the image",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "statement": "A single face changes register as light passes through the sheet. In the backlit view, pale marks collapse into a slate-blue mass while the hand and its shadow enter the portrait as temporary structure.",
+      "documentation": [
+        {
+          "label": "Front-lit view",
+          "file": "/assets/uploads/sequence-6-front-lit.webp"
+        },
+        {
+          "label": "Hand-held view",
+          "file": "/assets/uploads/sequence-6-handheld.webp"
+        },
+        {
+          "label": "Rotated orientation study",
+          "file": "/assets/uploads/sequence-6-rotated.webp"
+        }
+      ]
+    },
+    {
       "slug": "divided-light",
       "title": "Divided Light",
       "medium": "Mixed media",
@@ -180,6 +206,18 @@
       "series": "Inversions"
     },
     {
+      "slug": "inversion-study-iv",
+      "title": "Inversion Study IV",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-iv.webp",
+      "alt": "Split pink and cream portrait surrounded by a black circular field with blue and magenta corners",
+      "rotation": 180,
+      "featured": true,
+      "series": "Inversions",
+      "statement": "Rotation reorganizes the face around a black circular field. The split coloring and doubled directional pull make orientation part of the portrait rather than a correction applied to it."
+    },
+    {
       "slug": "red-mask",
       "title": "Red Mask",
       "medium": "Mixed media on paper",
@@ -189,6 +227,18 @@
       "rotation": 0,
       "featured": true,
       "series": "Witnesses"
+    },
+    {
+      "slug": "red-witness",
+      "title": "Red Witness",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-witness.webp",
+      "alt": "Close expressionist portrait in red, black, orange, and pink with a dark sweep surrounding the face",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A close, compressed face holds the viewer inside a dark sweep of hair and red ground. Exposed lines remain visible across the features, keeping the image unsettled rather than resolved."
     },
     {
       "slug": "electric-witness",
@@ -233,6 +283,18 @@
       "rotation": 0,
       "featured": true,
       "series": "Soft Fields"
+    },
+    {
+      "slug": "soft-field-ii",
+      "title": "Soft Field II",
+      "medium": "Acrylic and mixed media on canvas",
+      "year": "2026",
+      "image": "/assets/uploads/soft-field-ii.webp",
+      "alt": "Dark central figure emerging from overlapping red, orange, and pink circular fields above a pale blue garment",
+      "rotation": 0,
+      "featured": true,
+      "series": "Soft Fields",
+      "statement": "A figure emerges from overlapping red and orange forms, with the surrounding field behaving as aura, hair, atmosphere, and pressure at once."
     }
   ]
 }
