@@ -1,6 +1,39 @@
 {
   "artworks": [
     {
+      "slug": "sequence-1a",
+      "title": "sequence 1a",
+      "medium": "acrylic on paper and 3D hand printed filament",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament on top of the watcher.jpg",
+      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament ",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-1b",
+      "title": "sequence-1b",
+      "medium": "handprinted 3D filament ",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament shadow.jpg",
+      "alt": "Line drawing of a face in white and transparent 3D-pen filament suspended over paper with shadow creating the 3rd image",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-1c",
+      "title": "sequence 1c",
+      "medium": "hand printed 3d filament suspended on top of wood",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament solo.jpg",
+      "alt": "Transparent filament portrait suspended above wood panel",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
       "slug": "sequence-2a",
       "title": "sequence 2a",
       "medium": "Acrylic & marker",
@@ -43,36 +76,6 @@
           "file": "/assets/uploads/sequence-3b-registration.jpg"
         }
       ]
-    },
-    {
-      "slug": "sequence-1a",
-      "title": "sequence 1a",
-      "medium": "acrylic on paper and 3D hand printed filament",
-      "year": "2026",
-      "image": "/assets/uploads/My face filament on top of the watcher.jpg",
-      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament ",
-      "rotation": 0,
-      "featured": true
-    },
-    {
-      "slug": "sequence-1b",
-      "title": "sequence-1b",
-      "medium": "handprinted 3D filament ",
-      "year": "2026",
-      "image": "/assets/uploads/My face filament shadow.jpg",
-      "alt": "Line drawing of a face in white and transparent 3D-pen filament suspended over paper with shadow creating the 3rd image",
-      "rotation": 0,
-      "featured": true
-    },
-    {
-      "slug": "sequence-1c",
-      "title": "sequence 1c",
-      "medium": "hand printed 3d filament suspended on top of wood",
-      "year": "2026",
-      "image": "/assets/uploads/My face filament solo.jpg",
-      "alt": "Transparent filament portrait suspended above wood panel",
-      "rotation": 0,
-      "featured": true
     },
     {
       "slug": "sequence-4a",
@@ -122,7 +125,6 @@
       "alt": "Backlit translucent-paper portrait whose pale face changes to slate blue as a hand and its shadow enter the image",
       "rotation": 0,
       "featured": true,
-      "series": "Faces and Shadows",
       "statement": "A single face changes register as light passes through the sheet. In the backlit view, pale marks collapse into a slate-blue mass while the hand and its shadow enter the portrait as temporary structure.",
       "documentation": [
         {
@@ -206,18 +208,6 @@
       "series": "Inversions"
     },
     {
-      "slug": "inversion-study-iv",
-      "title": "Inversion Study IV",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/inversion-study-iv.webp",
-      "alt": "Split pink and cream portrait surrounded by a black circular field with blue and magenta corners",
-      "rotation": 180,
-      "featured": true,
-      "series": "Inversions",
-      "statement": "Rotation reorganizes the face around a black circular field. The split coloring and doubled directional pull make orientation part of the portrait rather than a correction applied to it."
-    },
-    {
       "slug": "red-mask",
       "title": "Red Mask",
       "medium": "Mixed media on paper",
@@ -283,18 +273,6 @@
       "rotation": 0,
       "featured": true,
       "series": "Soft Fields"
-    },
-    {
-      "slug": "soft-field-ii",
-      "title": "Soft Field II",
-      "medium": "Acrylic and mixed media on canvas",
-      "year": "2026",
-      "image": "/assets/uploads/soft-field-ii.webp",
-      "alt": "Dark central figure emerging from overlapping red, orange, and pink circular fields above a pale blue garment",
-      "rotation": 0,
-      "featured": true,
-      "series": "Soft Fields",
-      "statement": "A figure emerges from overlapping red and orange forms, with the surrounding field behaving as aura, hair, atmosphere, and pressure at once."
     }
   ]
 }
