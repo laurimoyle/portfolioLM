@@ -122,22 +122,22 @@
       "medium": "Paint marker and mixed media on translucent paper",
       "year": "2026",
       "image": "/assets/uploads/sequence-6-backlit.webp",
-      "alt": "Backlit translucent-paper portrait whose pale face changes to slate blue as a hand and its shadow enter the image",
+      "alt": "First translucent-paper portrait in its dark backlit state, with blond hair and a face shifted toward slate blue",
       "rotation": 0,
       "featured": true,
-      "statement": "A single face changes register as light passes through the sheet. In the backlit view, pale marks collapse into a slate-blue mass while the hand and its shadow enter the portrait as temporary structure.",
+      "statement": "Sequence 6 brings together two portraits painted on translucent paper. Each is shown in a light, front-lit state and again with light passing through from behind, when the pale surfaces darken and previously quiet colors become more forceful. The four images document two physical paintings rather than four separate works.",
       "documentation": [
         {
-          "label": "Front-lit view",
-          "file": "/assets/uploads/sequence-6-front-lit.webp"
-        },
-        {
-          "label": "Hand-held view",
+          "label": "Portrait I — light/front-lit state",
           "file": "/assets/uploads/sequence-6-handheld.webp"
         },
         {
-          "label": "Rotated orientation study",
-          "file": "/assets/uploads/sequence-6-rotated.webp"
+          "label": "Portrait II — light/front-lit state",
+          "file": "/assets/uploads/sequence-6-red-haired-front-lit.webp"
+        },
+        {
+          "label": "Portrait II — dark/backlit state",
+          "file": "/assets/uploads/sequence-6-red-haired-backlit.webp"
         }
       ]
     },
