@@ -1,17 +1,6 @@
 {
   "artworks": [
     {
-      "slug": "sequence-2a",
-      "title": "sequence 2a",
-      "medium": "Acrylic & marker",
-      "year": "2026",
-      "image": "/assets/uploads/sequence 1a-1.jpg",
-      "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
-      "rotation": 0,
-      "featured": true,
-      "series": "Faces and Shadows"
-    },
-    {
       "slug": "sequence-1a",
       "title": "sequence 1a",
       "medium": "acrylic on paper and 3D hand printed filament",
@@ -40,6 +29,17 @@
       "year": "2026",
       "image": "/assets/uploads/My face filament solo.jpg",
       "alt": "Transparent filament portrait suspended above wood panel",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-2a",
+      "title": "sequence 2a",
+      "medium": "Acrylic & marker",
+      "year": "2026",
+      "image": "/assets/uploads/sequence 1a-1.jpg",
+      "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
       "rotation": 0,
       "featured": true,
       "series": "Faces and Shadows"
@@ -143,6 +143,18 @@
       ]
     },
     {
+      "slug": "wire-over-face",
+      "title": "Wire Over Face",
+      "medium": "Wire construction over framed drawing",
+      "year": "2026",
+      "image": "/assets/uploads/wire-over-face.jpg",
+      "alt": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "statement": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together."
+    },
+    {
       "slug": "divided-light",
       "title": "Divided Light",
       "medium": "Mixed media",
@@ -163,6 +175,24 @@
       "rotation": 0,
       "featured": true,
       "series": "Split Fields"
+    },
+    {
+      "slug": "red-on-green",
+      "title": "Red on Green",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-on-green.jpg",
+      "alt": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Split Fields",
+      "statement": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
+      "documentation": [
+        {
+          "label": "Earlier state",
+          "file": "/assets/uploads/red-on-green-stage-1.jpg"
+        }
+      ]
     },
     {
       "slug": "inward-bloom",
@@ -207,6 +237,32 @@
       "rotation": 180,
       "featured": true,
       "series": "Inversions"
+    },
+    {
+      "slug": "one-eye-open",
+      "title": "One Eye Open",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/one-eye-open.jpg",
+      "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Inversions",
+      "statement": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "documentation": [
+        {
+          "label": "On the easel",
+          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
+        },
+        {
+          "label": "Violet form extended",
+          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
+        },
+        {
+          "label": "Later state",
+          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
+        }
+      ]
     },
     {
       "slug": "red-mask",
@@ -263,17 +319,6 @@
       "rotation": 0,
       "featured": false,
       "series": "Witnesses"
-    },
-    {
-      "slug": "soft-field-i",
-      "title": "Soft Field I",
-      "medium": "Mixed media on canvas",
-      "year": "2026",
-      "image": "/assets/uploads/soft-field-i.jpg",
-      "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
-      "rotation": 0,
-      "featured": true,
-      "series": "Soft Fields"
     },
     {
       "slug": "the-toast",
@@ -422,6 +467,17 @@
       ]
     },
     {
+      "slug": "soft-field-i",
+      "title": "Soft Field I",
+      "medium": "Mixed media on canvas",
+      "year": "2026",
+      "image": "/assets/uploads/soft-field-i.jpg",
+      "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
+      "rotation": 0,
+      "featured": true,
+      "series": "Soft Fields"
+    },
+    {
       "slug": "violet-study",
       "title": "Violet Study",
       "medium": "Acrylic and graphite on paper",
@@ -432,62 +488,6 @@
       "featured": true,
       "series": "Soft Fields",
       "statement": "A face held just below resolution, washed in violet, with only the lips and lower lids brought forward in red."
-    },
-    {
-      "slug": "red-on-green",
-      "title": "Red on Green",
-      "medium": "Acrylic and graphite on paper",
-      "year": "2026",
-      "image": "/assets/uploads/red-on-green.jpg",
-      "alt": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
-      "rotation": 0,
-      "featured": true,
-      "series": "Split Fields",
-      "statement": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
-      "documentation": [
-        {
-          "label": "Earlier state",
-          "file": "/assets/uploads/red-on-green-stage-1.jpg"
-        }
-      ]
-    },
-    {
-      "slug": "one-eye-open",
-      "title": "One Eye Open",
-      "medium": "Acrylic and graphite on paper",
-      "year": "2026",
-      "image": "/assets/uploads/one-eye-open.jpg",
-      "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
-      "rotation": 0,
-      "featured": true,
-      "series": "Inversions",
-      "statement": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
-      "documentation": [
-        {
-          "label": "On the easel",
-          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
-        },
-        {
-          "label": "Violet form extended",
-          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
-        },
-        {
-          "label": "Later state",
-          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
-        }
-      ]
-    },
-    {
-      "slug": "wire-over-face",
-      "title": "Wire Over Face",
-      "medium": "Wire construction over framed drawing",
-      "year": "2026",
-      "image": "/assets/uploads/wire-over-face.jpg",
-      "alt": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together.",
-      "rotation": 0,
-      "featured": true,
-      "series": "Faces and Shadows",
-      "statement": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together."
     }
   ]
 }
