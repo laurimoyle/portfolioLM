@@ -1,0 +1,493 @@
+{
+  "artworks": [
+    {
+      "slug": "sequence-2a",
+      "title": "sequence 2a",
+      "medium": "Acrylic & marker",
+      "year": "2026",
+      "image": "/assets/uploads/sequence 1a-1.jpg",
+      "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-1a",
+      "title": "sequence 1a",
+      "medium": "acrylic on paper and 3D hand printed filament",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament on top of the watcher.jpg",
+      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament ",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-1b",
+      "title": "sequence-1b",
+      "medium": "handprinted 3D filament ",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament shadow.jpg",
+      "alt": "Line drawing of a face in white and transparent 3D-pen filament suspended over paper with shadow creating the 3rd image",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-1c",
+      "title": "sequence 1c",
+      "medium": "hand printed 3d filament suspended on top of wood",
+      "year": "2026",
+      "image": "/assets/uploads/My face filament solo.jpg",
+      "alt": "Transparent filament portrait suspended above wood panel",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-2b",
+      "title": "sequence 2b",
+      "medium": "White and Transparent filament suspended to create shadow with light",
+      "year": "2026",
+      "image": "/assets/uploads/sculpture-1.png",
+      "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-2c",
+      "title": "sequence 2c",
+      "medium": "White and transparent filament with projected shadow",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-3b-shadow.jpg",
+      "alt": "Transparent filament portrait suspended above paper so the sculpted line and its projected shadow form two faces",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "statement": "This filament construction is the three-dimensional counterpart to The Watchman, which appears in Witnesses. Here, light separates the object from the projected portrait it produces.",
+      "documentation": [
+        {
+          "label": "Filament construction, unlit",
+          "file": "/assets/uploads/sequence-3b-object.jpg"
+        },
+        {
+          "label": "Construction aligned with its shadow",
+          "file": "/assets/uploads/sequence-3b-registration.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sequence-4a",
+      "title": "sequence 4a",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-4a.jpg",
+      "alt": "Elongated mixed-media portrait with wide black eyes and softly washed peach, gray, and rose passages",
+      "rotation": 180,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-4b",
+      "title": "sequence 4b",
+      "medium": "Black filament on translucent support",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-4b.jpg",
+      "alt": "Black filament translation of an elongated face built across a translucent rectangular support",
+      "rotation": 180,
+      "featured": true,
+      "series": "Faces and Shadows"
+    },
+    {
+      "slug": "sequence-5",
+      "title": "sequence 5",
+      "medium": "Mixed media and filament on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-5-alignment.jpg",
+      "alt": "Black and white filament portrait aligned over a pink and orange painted face",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "documentation": [
+        {
+          "label": "Alignment and separation study",
+          "file": "/assets/uploads/sequence-5-process.mp4"
+        }
+      ]
+    },
+    {
+      "slug": "sequence-6",
+      "title": "sequence 6",
+      "medium": "Paint marker and mixed media on translucent paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-6-backlit.webp",
+      "alt": "First translucent-paper portrait in its dark backlit state, with blond hair and a face shifted toward slate blue",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "statement": "Sequence 6 brings together two portraits painted on translucent paper. Each is shown in a light, front-lit state and again with light passing through from behind, when the pale surfaces darken and previously quiet colors become more forceful. The four images document two physical paintings rather than four separate works.",
+      "documentation": [
+        {
+          "label": "Portrait I — light/front-lit state",
+          "file": "/assets/uploads/sequence-6-handheld.webp"
+        },
+        {
+          "label": "Portrait II — light/front-lit state",
+          "file": "/assets/uploads/sequence-6-red-haired-front-lit.webp"
+        },
+        {
+          "label": "Portrait II — dark/backlit state",
+          "file": "/assets/uploads/sequence-6-red-haired-backlit.webp"
+        }
+      ]
+    },
+    {
+      "slug": "divided-light",
+      "title": "Divided Light",
+      "medium": "Mixed media",
+      "year": "2026",
+      "image": "/assets/uploads/divided-light.webp",
+      "alt": "Frontal portrait divided into warm orange and cool blue planes against a blue ground",
+      "rotation": 0,
+      "featured": true,
+      "series": "Split Fields"
+    },
+    {
+      "slug": "green-room",
+      "title": "Green Room",
+      "medium": "Mixed media",
+      "year": "2026",
+      "image": "/assets/uploads/green-room.webp",
+      "alt": "Asymmetrical portrait with a dark sculpted hairstyle against a turquoise green ground",
+      "rotation": 0,
+      "featured": true,
+      "series": "Split Fields"
+    },
+    {
+      "slug": "inward-bloom",
+      "title": "Inward Bloom",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inward-bloom.webp",
+      "alt": "Vivid symmetrical face built from eyes, lips, leaves, and curling fluorescent lines",
+      "rotation": 0,
+      "featured": true,
+      "series": "Inversions"
+    },
+    {
+      "slug": "inversion-study",
+      "title": "Inversion Study",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inverted-portrait-16.jpg",
+      "alt": "Orange, cyan, violet, and white expressionist portrait photographed on a wood floor",
+      "rotation": 180,
+      "featured": true,
+      "series": "Inversions"
+    },
+    {
+      "slug": "inversion-study-ii",
+      "title": "Inversion Study II",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-ii.jpg",
+      "alt": "Mauve and blue mask-like portrait with orange contours and doubled facial features",
+      "rotation": 180,
+      "featured": true,
+      "series": "Inversions"
+    },
+    {
+      "slug": "inversion-study-iii",
+      "title": "Inversion Study III",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-iii.jpg",
+      "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
+      "rotation": 180,
+      "featured": true,
+      "series": "Inversions"
+    },
+    {
+      "slug": "red-mask",
+      "title": "Red Mask",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-mask.webp",
+      "alt": "Angular red portrait mask with black recessed eyes against an orange ground",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses"
+    },
+    {
+      "slug": "red-witness",
+      "title": "Red Witness",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-witness.webp",
+      "alt": "Close expressionist portrait in red, black, orange, and pink with a dark sweep surrounding the face",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A close, compressed face holds the viewer inside a dark sweep of hair and red ground. Exposed lines remain visible across the features, keeping the image unsettled rather than resolved."
+    },
+    {
+      "slug": "electric-witness",
+      "title": "Electric Witness",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/electric-witness.webp",
+      "alt": "Brightly colored expressionist profile with wide eyes and green upright hair",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses"
+    },
+    {
+      "slug": "the-watchman",
+      "title": "The Watchman",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/the-watchman.webp",
+      "alt": "Linear portrait of a bald, bearded man with an elaborate moustache and green eyes",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses"
+    },
+    {
+      "slug": "messenger",
+      "title": "Messenger",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/messenger.webp",
+      "alt": "Pale frontal portrait marked with fine yellow and violet lines and a small bird at the shoulder",
+      "rotation": 0,
+      "featured": false,
+      "series": "Witnesses"
+    },
+    {
+      "slug": "soft-field-i",
+      "title": "Soft Field I",
+      "medium": "Mixed media on canvas",
+      "year": "2026",
+      "image": "/assets/uploads/soft-field-i.jpg",
+      "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
+      "rotation": 0,
+      "featured": true,
+      "series": "Soft Fields"
+    },
+    {
+      "slug": "the-toast",
+      "title": "The Toast",
+      "medium": "Ink and coloured pen on paper",
+      "year": "2026",
+      "image": "/assets/uploads/the-toast.jpg",
+      "alt": "Frontal portrait built entirely from accumulated pen strokes, the figure raising a glass toward the viewer.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "Frontal portrait built entirely from accumulated pen strokes, the figure raising a glass toward the viewer."
+    },
+    {
+      "slug": "look-up",
+      "title": "Look Up",
+      "medium": "Paint marker on paper",
+      "year": "2026",
+      "image": "/assets/uploads/look-up.jpg",
+      "alt": "A head tipped back, eyes raised, the skin worked in overlapping strokes of orange, green and violet.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A head tipped back, eyes raised, the skin worked in overlapping strokes of orange, green and violet."
+    },
+    {
+      "slug": "gilded-profile",
+      "title": "Gilded Profile",
+      "medium": "Marker and metallic leaf on paper",
+      "year": "2026",
+      "image": "/assets/uploads/gilded-profile.jpg",
+      "alt": "A profile turned upward, the throat and jaw laid in metallic leaf against blue and yellow hatching.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A profile turned upward, the throat and jaw laid in metallic leaf against blue and yellow hatching."
+    },
+    {
+      "slug": "night-caller",
+      "title": "Night Caller",
+      "medium": "Acrylic on paper",
+      "year": "2026",
+      "image": "/assets/uploads/night-caller.jpg",
+      "alt": "A gaunt frontal head with heavy brows and a red mouth, resolved from a pale first state into full orange.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A gaunt frontal head with heavy brows and a red mouth, resolved from a pale first state into full orange.",
+      "documentation": [
+        {
+          "label": "Underpainting, pale state",
+          "file": "/assets/uploads/night-caller-stage-1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "speaker",
+      "title": "Speaker",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/speaker.jpg",
+      "alt": "A shouting head that arrives in three passes: contour drawing, blocked pink, then the full red and orange.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A shouting head that arrives in three passes: contour drawing, blocked pink, then the full red and orange.",
+      "documentation": [
+        {
+          "label": "Drawing with first colour",
+          "file": "/assets/uploads/speaker-stage-1.jpg"
+        },
+        {
+          "label": "Blocking in",
+          "file": "/assets/uploads/speaker-stage-2.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "live-wire",
+      "title": "Live Wire",
+      "medium": "Acrylic and paint marker on paper",
+      "year": "2026",
+      "image": "/assets/uploads/live-wire.jpg",
+      "alt": "A red head against a pale ground, then bound in turquoise and orange contour until the drawing sits on top of the painting as a second skin.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A red head against a pale ground, then bound in turquoise and orange contour until the drawing sits on top of the painting as a second skin.",
+      "documentation": [
+        {
+          "label": "Underpainting",
+          "file": "/assets/uploads/live-wire-stage-1.jpg"
+        },
+        {
+          "label": "First contour pass",
+          "file": "/assets/uploads/live-wire-stage-2.jpg"
+        },
+        {
+          "label": "Contours extended",
+          "file": "/assets/uploads/live-wire-stage-3.jpg"
+        },
+        {
+          "label": "Warm lines added",
+          "file": "/assets/uploads/live-wire-stage-4.jpg"
+        },
+        {
+          "label": "Later state",
+          "file": "/assets/uploads/live-wire-stage-5.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "sitting-for-it",
+      "title": "Sitting For It",
+      "medium": "Acrylic and marker on paper",
+      "year": "2026",
+      "image": "/assets/uploads/sitting-for-it.jpg",
+      "alt": "A pale yellow face with a violet beard, held against a flat red ground.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A pale yellow face with a violet beard, held against a flat red ground.",
+      "documentation": [
+        {
+          "label": "Earlier state",
+          "file": "/assets/uploads/sitting-for-it-stage-1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "auburn",
+      "title": "Auburn",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/auburn.jpg",
+      "alt": "Dark auburn hair sweeps around a yellow face; one eye stays drawn while the other is painted.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "Dark auburn hair sweeps around a yellow face; one eye stays drawn while the other is painted.",
+      "documentation": [
+        {
+          "label": "Earlier state",
+          "file": "/assets/uploads/auburn-stage-1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "violet-study",
+      "title": "Violet Study",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/violet-study.jpg",
+      "alt": "A face held just below resolution, washed in violet, with only the lips and lower lids brought forward in red.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Soft Fields",
+      "statement": "A face held just below resolution, washed in violet, with only the lips and lower lids brought forward in red."
+    },
+    {
+      "slug": "red-on-green",
+      "title": "Red on Green",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/red-on-green.jpg",
+      "alt": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Split Fields",
+      "statement": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
+      "documentation": [
+        {
+          "label": "Earlier state",
+          "file": "/assets/uploads/red-on-green-stage-1.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "one-eye-open",
+      "title": "One Eye Open",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/one-eye-open.jpg",
+      "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Inversions",
+      "statement": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "documentation": [
+        {
+          "label": "On the easel",
+          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
+        },
+        {
+          "label": "Violet form extended",
+          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
+        },
+        {
+          "label": "Later state",
+          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "wire-over-face",
+      "title": "Wire Over Face",
+      "medium": "Wire construction over framed drawing",
+      "year": "2026",
+      "image": "/assets/uploads/wire-over-face.jpg",
+      "alt": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Faces and Shadows",
+      "statement": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together."
+    }
+  ]
+}
