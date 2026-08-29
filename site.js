@@ -244,7 +244,7 @@ async function home() {
     artworkIndex++;
   };
 
-  const openingWork = works.find(work => work.slug === 'sequence-2a');
+  const openingWork = null;
   const openingGroup = openingWork && groups.find(group => group.works.some(work => work.slug === openingWork.slug));
   if (openingWork && openingGroup) {
     appendWorkPanel(openingWork, openingGroup, openingGroup.works.findIndex(work => work.slug === openingWork.slug), true);
