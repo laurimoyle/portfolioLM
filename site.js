@@ -101,6 +101,27 @@ const seriesStories = {
     galleryLabel: 'Works in the series',
     galleryCopy: 'Portraits united by their insistence on returning the viewer’s attention.'
   },
+  'Light States': {
+    eyebrow: 'One painting \u00b7 two conditions \u00b7 switched light',
+    statement: 'Light States pairs paintings made on translucent paper with the light that passes through them. Each work exists in two conditions: front-lit, where the sheet reads as a pale drawing, and backlit, where the surface darkens and colors that were quiet become forceful. Neither state is the final image; the work is the interval between them.',
+    sectionLabel: 'Two conditions',
+    sections: [
+      {
+        title: 'Surface',
+        text: 'Front-lit, the painting is read the ordinary way \u2014 marks resting on a pale sheet.'
+      },
+      {
+        title: 'Switch',
+        text: 'The light moves behind the paper and the support itself becomes the source.'
+      },
+      {
+        title: 'Reversal',
+        text: 'Values invert: pale passages darken, buried color comes forward, and a second image appears.'
+      }
+    ],
+    galleryLabel: 'Works in the series',
+    galleryCopy: 'Paired translucent paintings, each shown with the light off and on.'
+  },
   'Soft Fields': {
     eyebrow: 'Atmosphere · suspended marks · emerging form',
     statement: 'Soft Fields lets color gather before it becomes a figure. Broad, translucent passages overlap without a hard contour, while small raised marks interrupt the surface like fragments of a face or signals moving through atmosphere. The work remains open between abstraction and recognition.',
@@ -131,23 +152,28 @@ const homepageSeries = [
     line: 'One face becomes image, object, and projected double.'
   },
   {
-    name: 'Split Fields',
+    name: 'Light States',
     number: '02',
+    line: 'Paintings that change when the light moves behind them.'
+  },
+  {
+    name: 'Split Fields',
+    number: '03',
     line: 'Portraits held together across competing fields of color.'
   },
   {
     name: 'Inversions',
-    number: '03',
+    number: '04',
     line: 'Faces turned until anatomy becomes an interior landscape.'
   },
   {
     name: 'Witnesses',
-    number: '04',
+    number: '05',
     line: 'Figures whose gaze makes looking a reciprocal act.'
   },
   {
     name: 'Soft Fields',
-    number: '05',
+    number: '06',
     line: 'Color gathers at the edge of recognition.'
   }
 ];
@@ -244,7 +270,7 @@ async function home() {
     artworkIndex++;
   };
 
-  const openingWork = null;
+  const openingWork = works.find(work => work.slug === 'red-witness');
   const openingGroup = openingWork && groups.find(group => group.works.some(work => work.slug === openingWork.slug));
   if (openingWork && openingGroup) {
     appendWorkPanel(openingWork, openingGroup, openingGroup.works.findIndex(work => work.slug === openingWork.slug), true);
@@ -263,7 +289,6 @@ async function home() {
     feed.append(panel);
 
     group.works.forEach((work, groupIndex) => {
-      if (work.slug === openingWork?.slug) return;
       appendWorkPanel(work, group, groupIndex);
     });
   });
@@ -312,7 +337,8 @@ async function detail() {
   document.title = `${work.title} — Lauri Moyle`;
   const documents = (work.documentation || []).filter(item => item.file).map(documentationItem).join('');
   const individualStatement = work.statement ? `<div class="statement">${paragraphs(work.statement)}</div>` : (seriesStories[normalizeSeries(work.series)] ? '' : '<p class="muted">Statement and documentation forthcoming.</p>');
-  root.innerHTML = `<article><div class="detail-image"><img class="detail-art${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" decoding="async" fetchpriority="high"></div><div class="detail-copy"><span class="mono">${esc(work.medium)} · ${esc(work.year)}</span><h1>${esc(work.title)}</h1>${work.series ? `<p class="series">${esc(normalizeSeries(work.series))}</p>` : ''}${individualStatement}</div></article>${seriesStory(work, works)}${documents ? `<section class="documentation" aria-labelledby="documentation-title"><div class="section-heading"><h2 id="documentation-title">Documentation</h2><p>Process, installation, and supporting material.</p></div><div class="documentation-grid">${documents}</div></section>` : ''}`;
+  const backHref = work.series ? `/#${idForSeries(work.series)}` : '/';
+  root.innerHTML = `<p class="detail-back"><a class="mono" href="${backHref}">\u2190 Back to all work</a></p><article><div class="detail-image"><img class="detail-art${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" decoding="async" fetchpriority="high"></div><div class="detail-copy"><span class="mono">${esc(work.medium)} · ${esc(work.year)}</span><h1>${esc(work.title)}</h1>${work.series ? `<p class="series">${esc(normalizeSeries(work.series))}</p>` : ''}${individualStatement}</div></article>${seriesStory(work, works)}${documents ? `<section class="documentation" aria-labelledby="documentation-title"><div class="section-heading"><h2 id="documentation-title">Documentation</h2><p>Process, installation, and supporting material.</p></div><div class="documentation-grid">${documents}</div></section>` : ''}`;
 }
 
 function contact() {
