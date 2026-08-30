@@ -117,32 +117,6 @@
       ]
     },
     {
-      "slug": "sequence-6",
-      "title": "sequence 6",
-      "medium": "Paint marker and mixed media on translucent paper",
-      "year": "2026",
-      "image": "/assets/uploads/sequence-6-backlit.webp",
-      "alt": "First translucent-paper portrait in its dark backlit state, with blond hair and a face shifted toward slate blue",
-      "rotation": 0,
-      "featured": true,
-      "series": "Faces and Shadows",
-      "statement": "Sequence 6 brings together two portraits painted on translucent paper. Each is shown in a light, front-lit state and again with light passing through from behind, when the pale surfaces darken and previously quiet colors become more forceful. The four images document two physical paintings rather than four separate works.",
-      "documentation": [
-        {
-          "label": "Portrait I — light/front-lit state",
-          "file": "/assets/uploads/sequence-6-handheld.webp"
-        },
-        {
-          "label": "Portrait II — light/front-lit state",
-          "file": "/assets/uploads/sequence-6-red-haired-front-lit.webp"
-        },
-        {
-          "label": "Portrait II — dark/backlit state",
-          "file": "/assets/uploads/sequence-6-red-haired-backlit.webp"
-        }
-      ]
-    },
-    {
       "slug": "wire-over-face",
       "title": "Wire Over Face",
       "medium": "Wire construction over framed drawing",
@@ -153,6 +127,42 @@
       "featured": true,
       "series": "Faces and Shadows",
       "statement": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together."
+    },
+    {
+      "slug": "light-state-i",
+      "title": "Light State I",
+      "medium": "Paint marker and mixed media on translucent paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-6-backlit.webp",
+      "alt": "Translucent-paper portrait in its dark backlit state, with blond hair and a face shifted toward slate blue",
+      "rotation": 0,
+      "featured": true,
+      "series": "Light States",
+      "statement": "One painting, two conditions. Front-lit, the sheet reads as a pale drawing; with the light behind it, the surface darkens and quiet colors become forceful.",
+      "documentation": [
+        {
+          "label": "Light off — front-lit state",
+          "file": "/assets/uploads/sequence-6-handheld.webp"
+        }
+      ]
+    },
+    {
+      "slug": "light-state-ii",
+      "title": "Light State II",
+      "medium": "Paint marker and mixed media on translucent paper",
+      "year": "2026",
+      "image": "/assets/uploads/sequence-6-red-haired-backlit.webp",
+      "alt": "Red-haired translucent-paper portrait in its dark backlit state",
+      "rotation": 0,
+      "featured": true,
+      "series": "Light States",
+      "statement": "The second of the paired translucent paintings, shown with light passing through from behind. Its front-lit state accompanies it as documentation.",
+      "documentation": [
+        {
+          "label": "Light off — front-lit state",
+          "file": "/assets/uploads/sequence-6-red-haired-front-lit.webp"
+        }
+      ]
     },
     {
       "slug": "divided-light",
@@ -239,32 +249,6 @@
       "series": "Inversions"
     },
     {
-      "slug": "one-eye-open",
-      "title": "One Eye Open",
-      "medium": "Acrylic and graphite on paper",
-      "year": "2026",
-      "image": "/assets/uploads/one-eye-open.jpg",
-      "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
-      "rotation": 0,
-      "featured": true,
-      "series": "Inversions",
-      "statement": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
-      "documentation": [
-        {
-          "label": "On the easel",
-          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
-        },
-        {
-          "label": "Violet form extended",
-          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
-        },
-        {
-          "label": "Later state",
-          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
-        }
-      ]
-    },
-    {
       "slug": "red-mask",
       "title": "Red Mask",
       "medium": "Mixed media on paper",
@@ -321,8 +305,34 @@
       "series": "Witnesses"
     },
     {
-      "slug": "the-toast",
-      "title": "The Toast",
+      "slug": "one-eye-open",
+      "title": "One Eye Open",
+      "medium": "Acrylic and graphite on paper",
+      "year": "2026",
+      "image": "/assets/uploads/one-eye-open.jpg",
+      "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
+      "documentation": [
+        {
+          "label": "On the easel",
+          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
+        },
+        {
+          "label": "Violet form extended",
+          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
+        },
+        {
+          "label": "Later state",
+          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "delicious",
+      "title": "Delicious",
       "medium": "Ink and coloured pen on paper",
       "year": "2026",
       "image": "/assets/uploads/the-toast.jpg",
