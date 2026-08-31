@@ -129,8 +129,8 @@
       "statement": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together."
     },
     {
-      "slug": "light-state-i",
-      "title": "Light State I",
+      "slug": "at-night-i",
+      "title": "At Night I",
       "medium": "Paint marker and mixed media on translucent paper",
       "year": "2026",
       "image": "/assets/uploads/sequence-6-backlit.webp",
@@ -138,17 +138,17 @@
       "rotation": 0,
       "featured": true,
       "series": "Light States",
-      "statement": "One painting, two conditions. Front-lit, the sheet reads as a pale drawing; with the light behind it, the surface darkens and quiet colors become forceful.",
+      "statement": "One painting, two conditions. By day the sheet reads as a pale drawing; at night, with the light behind it, the surface darkens and quiet colors become forceful.",
       "documentation": [
         {
-          "label": "Light off — front-lit state",
+          "label": "By Day I",
           "file": "/assets/uploads/sequence-6-handheld.webp"
         }
       ]
     },
     {
-      "slug": "light-state-ii",
-      "title": "Light State II",
+      "slug": "at-night-ii",
+      "title": "At Night II",
       "medium": "Paint marker and mixed media on translucent paper",
       "year": "2026",
       "image": "/assets/uploads/sequence-6-red-haired-backlit.webp",
@@ -156,10 +156,10 @@
       "rotation": 0,
       "featured": true,
       "series": "Light States",
-      "statement": "The second of the paired translucent paintings, shown with light passing through from behind. Its front-lit state accompanies it as documentation.",
+      "statement": "The second of the paired translucent paintings, shown at night with light passing through from behind. Its daytime state accompanies it.",
       "documentation": [
         {
-          "label": "Light off — front-lit state",
+          "label": "By Day II",
           "file": "/assets/uploads/sequence-6-red-haired-front-lit.webp"
         }
       ]
@@ -205,6 +205,17 @@
       ]
     },
     {
+      "slug": "ember-field",
+      "title": "Ember Field",
+      "medium": "Mixed media on paper",
+      "year": "2026",
+      "image": "/assets/uploads/inversion-study-iii.jpg",
+      "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
+      "rotation": 180,
+      "featured": true,
+      "series": "Split Fields"
+    },
+    {
       "slug": "inward-bloom",
       "title": "Inward Bloom",
       "medium": "Mixed media on paper",
@@ -233,17 +244,6 @@
       "year": "2026",
       "image": "/assets/uploads/inversion-study-ii.jpg",
       "alt": "Mauve and blue mask-like portrait with orange contours and doubled facial features",
-      "rotation": 180,
-      "featured": true,
-      "series": "Inversions"
-    },
-    {
-      "slug": "inversion-study-iii",
-      "title": "Inversion Study III",
-      "medium": "Mixed media on paper",
-      "year": "2026",
-      "image": "/assets/uploads/inversion-study-iii.jpg",
-      "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
       "rotation": 180,
       "featured": true,
       "series": "Inversions"
@@ -352,7 +352,7 @@
       "rotation": 0,
       "featured": true,
       "series": "Witnesses",
-      "statement": "A head tipped back, eyes raised, the skin worked in overlapping strokes of orange, green and violet."
+      "statement": "A head tipped back, eyes raised, the skin worked in overlapping strokes of orange, green and violet.\n\nA note on this reproduction: the photographer’s shadow falling across the lower half is not a flaw in the documentation. In this format it is part of the work — the record of someone looking is left in the image."
     },
     {
       "slug": "gilded-profile",
@@ -475,6 +475,30 @@
           "file": "/assets/uploads/auburn-stage-1.jpg"
         }
       ]
+    },
+    {
+      "slug": "fair-witness",
+      "title": "Fair Witness",
+      "medium": "Paint marker and ink on paper",
+      "year": "2026",
+      "image": "/assets/uploads/fair-witness.jpg",
+      "alt": "Frontal head with golden hair, turquoise eyes and red lips, the skin built from pale hatched strokes",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "A frontal head in gold and pale hatching, holding the viewer with turquoise eyes."
+    },
+    {
+      "slug": "firebrand",
+      "title": "Firebrand",
+      "medium": "Paint marker and ink on paper",
+      "year": "2026",
+      "image": "/assets/uploads/firebrand.jpg",
+      "alt": "Long-necked figure with upswept orange hair, slate-blue brows and shadowed eyes",
+      "rotation": 0,
+      "featured": true,
+      "series": "Witnesses",
+      "statement": "Upswept orange hair over slate brows and ringed eyes; the head sits on a long, striated neck."
     },
     {
       "slug": "soft-field-i",
