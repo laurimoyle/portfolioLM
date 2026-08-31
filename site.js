@@ -280,7 +280,10 @@ async function home() {
     const story = seriesStories[group.name];
     const panel = document.createElement('section');
     const panelId = idForSeries(group.name);
-    const previews = group.works.slice(0, 3).map((work, index) => `<span class="series-preview-card" style="--preview-index:${index}"><img class="series-preview-image${rotationClass(work)}" src="${esc(work.image)}" alt="" loading="lazy" decoding="async"></span>`).join('');
+    const previewSource = group.name === 'Faces and Shadows'
+      ? [works.find(item => item.slug === 'the-watchman'), ...group.works].filter(Boolean).slice(0, 3)
+      : group.works.slice(0, 3);
+    const previews = previewSource.map((work, index) => `<span class="series-preview-card" style="--preview-index:${index}"><img class="series-preview-image${rotationClass(work)}" src="${esc(work.image)}" alt="" loading="lazy" decoding="async"></span>`).join('');
     panel.className = 'series-panel snap-panel';
     panel.id = panelId;
     panel.dataset.seriesNumber = group.number;
@@ -339,6 +342,14 @@ async function detail() {
   const individualStatement = work.statement ? `<div class="statement">${paragraphs(work.statement)}</div>` : (seriesStories[normalizeSeries(work.series)] ? '' : '<p class="muted">Statement and documentation forthcoming.</p>');
   const backHref = work.series ? `/#${idForSeries(work.series)}` : '/';
   root.innerHTML = `<p class="detail-back"><a class="mono" href="${backHref}">\u2190 Back to all work</a></p><article><div class="detail-image"><img class="detail-art${rotationClass(work)}" src="${esc(work.image)}" alt="${esc(work.alt)}" decoding="async" fetchpriority="high"></div><div class="detail-copy"><span class="mono">${esc(work.medium)} · ${esc(work.year)}</span><h1>${esc(work.title)}</h1>${work.series ? `<p class="series">${esc(normalizeSeries(work.series))}</p>` : ''}${individualStatement}</div></article>${seriesStory(work, works)}${documents ? `<section class="documentation" aria-labelledby="documentation-title"><div class="section-heading"><h2 id="documentation-title">Documentation</h2><p>Process, installation, and supporting material.</p></div><div class="documentation-grid">${documents}</div></section>` : ''}`;
+
+  const backLink = root.querySelector('.detail-back a');
+  if (backLink) backLink.addEventListener('click', event => {
+    if (history.length > 1 && document.referrer.startsWith(location.origin)) {
+      event.preventDefault();
+      history.back();
+    }
+  });
 }
 
 function contact() {
