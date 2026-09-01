@@ -337,7 +337,7 @@ async function detail() {
     return;
   }
 
-  document.title = `${work.title} — Lauri Moyle`;
+  document.title = `${work.title} — Lauri Moyle — #NotFormlessNotVoid`;
   const documents = (work.documentation || []).filter(item => item.file).map(documentationItem).join('');
   const individualStatement = work.statement ? `<div class="statement">${paragraphs(work.statement)}</div>` : (seriesStories[normalizeSeries(work.series)] ? '' : '<p class="muted">Statement and documentation forthcoming.</p>');
   const backHref = work.series ? `/#${idForSeries(work.series)}` : '/';
