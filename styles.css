@@ -386,6 +386,16 @@ button {
 .detail-copy { position: sticky; top: 130px; }
 .detail-copy h1 { font-size: clamp(36px, 5vw, 58px); }
 .series, .muted { color: var(--d); font-style: italic; }
+
+.load-error {
+  display: grid;
+  place-content: center;
+  gap: 14px;
+  min-height: 60vh;
+  padding: 12vh 32px;
+  text-align: center;
+}
+.load-error a { border-bottom: 1px solid var(--l); }
 .statement { margin: 40px 0; }
 .statement p + p { margin-top: 1.2em; }
 

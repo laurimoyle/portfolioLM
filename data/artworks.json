@@ -5,8 +5,8 @@
       "title": "sequence 1a",
       "medium": "acrylic on paper and 3D hand printed filament",
       "year": "2026",
-      "image": "/assets/uploads/my-face-filament-on-top-of-the-watcher.jpg",
-      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament ",
+      "image": "/assets/uploads/my-face-filament-on-top-of-the-watcher.webp",
+      "alt": "Expressionist portrait head in acrylic and marker, with hand printed 3D filament",
       "rotation": 0,
       "featured": true,
       "series": "Faces and Shadows"
@@ -14,9 +14,9 @@
     {
       "slug": "sequence-1b",
       "title": "sequence-1b",
-      "medium": "handprinted 3D filament ",
+      "medium": "handprinted 3D filament",
       "year": "2026",
-      "image": "/assets/uploads/my-face-filament-shadow.jpg",
+      "image": "/assets/uploads/my-face-filament-shadow.webp",
       "alt": "Line drawing of a face in white and transparent 3D-pen filament suspended over paper with shadow creating the 3rd image",
       "rotation": 0,
       "featured": true,
@@ -27,7 +27,7 @@
       "title": "sequence 1c",
       "medium": "hand printed 3d filament suspended on top of wood",
       "year": "2026",
-      "image": "/assets/uploads/my-face-filament-solo.jpg",
+      "image": "/assets/uploads/my-face-filament-solo.webp",
       "alt": "Transparent filament portrait suspended above wood panel",
       "rotation": 0,
       "featured": true,
@@ -38,7 +38,7 @@
       "title": "sequence 2a",
       "medium": "Acrylic & marker",
       "year": "2026",
-      "image": "/assets/uploads/sequence-1a-1.jpg",
+      "image": "/assets/uploads/sequence-1a-1.webp",
       "alt": "Expressionist portrait head in acrylic and marker, dark hair against an orange aura",
       "rotation": 0,
       "featured": true,
@@ -49,7 +49,7 @@
       "title": "sequence 2b",
       "medium": "White and Transparent filament suspended to create shadow with light",
       "year": "2026",
-      "image": "/assets/uploads/sculpture-1.png",
+      "image": "/assets/uploads/sculpture-1.webp",
       "alt": "Line drawing of a face in transparent 3D-pen filament suspended over paper paired with sequence 2a",
       "rotation": 0,
       "featured": true,
@@ -60,7 +60,7 @@
       "title": "sequence 2c",
       "medium": "White and transparent filament with projected shadow",
       "year": "2026",
-      "image": "/assets/uploads/sequence-3b-shadow.jpg",
+      "image": "/assets/uploads/sequence-3b-shadow.webp",
       "alt": "Transparent filament portrait suspended above paper so the sculpted line and its projected shadow form two faces",
       "rotation": 0,
       "featured": true,
@@ -69,11 +69,11 @@
       "documentation": [
         {
           "label": "Filament construction, unlit",
-          "file": "/assets/uploads/sequence-3b-object.jpg"
+          "file": "/assets/uploads/sequence-3b-object.webp"
         },
         {
           "label": "Construction aligned with its shadow",
-          "file": "/assets/uploads/sequence-3b-registration.jpg"
+          "file": "/assets/uploads/sequence-3b-registration.webp"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "title": "sequence 4a",
       "medium": "Mixed media on paper",
       "year": "2026",
-      "image": "/assets/uploads/sequence-4a.jpg",
+      "image": "/assets/uploads/sequence-4a.webp",
       "alt": "Elongated mixed-media portrait with wide black eyes and softly washed peach, gray, and rose passages",
       "rotation": 180,
       "featured": true,
@@ -93,7 +93,7 @@
       "title": "sequence 4b",
       "medium": "Black filament on translucent support",
       "year": "2026",
-      "image": "/assets/uploads/sequence-4b.jpg",
+      "image": "/assets/uploads/sequence-4b.webp",
       "alt": "Black filament translation of an elongated face built across a translucent rectangular support",
       "rotation": 180,
       "featured": true,
@@ -104,7 +104,7 @@
       "title": "sequence 5",
       "medium": "Mixed media and filament on paper",
       "year": "2026",
-      "image": "/assets/uploads/sequence-5-alignment.jpg",
+      "image": "/assets/uploads/sequence-5-alignment.webp",
       "alt": "Black and white filament portrait aligned over a pink and orange painted face",
       "rotation": 0,
       "featured": true,
@@ -121,7 +121,7 @@
       "title": "Wire Over Face",
       "medium": "Wire construction over framed drawing",
       "year": "2026",
-      "image": "/assets/uploads/wire-over-face.jpg",
+      "image": "/assets/uploads/wire-over-face.webp",
       "alt": "A hand-bent wire construction stands away from a framed drawing, so the object and the image beneath it are read together.",
       "rotation": 0,
       "featured": true,
@@ -191,7 +191,7 @@
       "title": "Red on Green",
       "medium": "Acrylic and graphite on paper",
       "year": "2026",
-      "image": "/assets/uploads/red-on-green.jpg",
+      "image": "/assets/uploads/red-on-green.webp",
       "alt": "A red head against an acid green field, the warm and cool halves meeting without a transition.",
       "rotation": 0,
       "featured": true,
@@ -200,7 +200,7 @@
       "documentation": [
         {
           "label": "Earlier state",
-          "file": "/assets/uploads/red-on-green-stage-1.jpg"
+          "file": "/assets/uploads/red-on-green-stage-1.webp"
         }
       ]
     },
@@ -209,7 +209,7 @@
       "title": "Ember Field",
       "medium": "Mixed media on paper",
       "year": "2026",
-      "image": "/assets/uploads/inversion-study-iii.jpg",
+      "image": "/assets/uploads/inversion-study-iii.webp",
       "alt": "Orange, cream, and charcoal portrait in which eyes, mouth, and surrounding fields exchange positions",
       "rotation": 180,
       "featured": true,
@@ -231,7 +231,7 @@
       "title": "Inversion Study",
       "medium": "Mixed media on paper",
       "year": "2026",
-      "image": "/assets/uploads/inverted-portrait-16.jpg",
+      "image": "/assets/uploads/inverted-portrait-16.webp",
       "alt": "Orange, cyan, violet, and white expressionist portrait photographed on a wood floor",
       "rotation": 180,
       "featured": true,
@@ -242,7 +242,7 @@
       "title": "Inversion Study II",
       "medium": "Mixed media on paper",
       "year": "2026",
-      "image": "/assets/uploads/inversion-study-ii.jpg",
+      "image": "/assets/uploads/inversion-study-ii.webp",
       "alt": "Mauve and blue mask-like portrait with orange contours and doubled facial features",
       "rotation": 180,
       "featured": true,
@@ -309,7 +309,7 @@
       "title": "One Eye Open",
       "medium": "Acrylic and graphite on paper",
       "year": "2026",
-      "image": "/assets/uploads/one-eye-open.jpg",
+      "image": "/assets/uploads/one-eye-open.webp",
       "alt": "The face is cropped until only one eye, a nostril and a mouth remain, with a violet form pressing in from the right.",
       "rotation": 0,
       "featured": true,
@@ -318,15 +318,15 @@
       "documentation": [
         {
           "label": "On the easel",
-          "file": "/assets/uploads/one-eye-open-stage-1.jpg"
+          "file": "/assets/uploads/one-eye-open-stage-1.webp"
         },
         {
           "label": "Violet form extended",
-          "file": "/assets/uploads/one-eye-open-stage-2.jpg"
+          "file": "/assets/uploads/one-eye-open-stage-2.webp"
         },
         {
           "label": "Later state",
-          "file": "/assets/uploads/one-eye-open-stage-3.jpg"
+          "file": "/assets/uploads/one-eye-open-stage-3.webp"
         }
       ]
     },
@@ -335,7 +335,7 @@
       "title": "Delicious",
       "medium": "Ink and coloured pen on paper",
       "year": "2026",
-      "image": "/assets/uploads/the-toast.jpg",
+      "image": "/assets/uploads/the-toast.webp",
       "alt": "Frontal portrait built entirely from accumulated pen strokes, the figure raising a glass toward the viewer.",
       "rotation": 0,
       "featured": true,
@@ -347,7 +347,7 @@
       "title": "Look Up",
       "medium": "Paint marker on paper",
       "year": "2026",
-      "image": "/assets/uploads/look-up.jpg",
+      "image": "/assets/uploads/look-up.webp",
       "alt": "A head tipped back, eyes raised, the skin worked in overlapping strokes of orange, green and violet.",
       "rotation": 0,
       "featured": true,
@@ -359,7 +359,7 @@
       "title": "Gilded Profile",
       "medium": "Marker and metallic leaf on paper",
       "year": "2026",
-      "image": "/assets/uploads/gilded-profile.jpg",
+      "image": "/assets/uploads/gilded-profile.webp",
       "alt": "A profile turned upward, the throat and jaw laid in metallic leaf against blue and yellow hatching.",
       "rotation": 0,
       "featured": true,
@@ -371,7 +371,7 @@
       "title": "Night Caller",
       "medium": "Acrylic on paper",
       "year": "2026",
-      "image": "/assets/uploads/night-caller.jpg",
+      "image": "/assets/uploads/night-caller.webp",
       "alt": "A gaunt frontal head with heavy brows and a red mouth, resolved from a pale first state into full orange.",
       "rotation": 0,
       "featured": true,
@@ -380,7 +380,7 @@
       "documentation": [
         {
           "label": "Underpainting, pale state",
-          "file": "/assets/uploads/night-caller-stage-1.jpg"
+          "file": "/assets/uploads/night-caller-stage-1.webp"
         }
       ]
     },
@@ -389,7 +389,7 @@
       "title": "Speaker",
       "medium": "Acrylic and graphite on paper",
       "year": "2026",
-      "image": "/assets/uploads/speaker.jpg",
+      "image": "/assets/uploads/speaker.webp",
       "alt": "A shouting head that arrives in three passes: contour drawing, blocked pink, then the full red and orange.",
       "rotation": 0,
       "featured": true,
@@ -398,11 +398,11 @@
       "documentation": [
         {
           "label": "Drawing with first colour",
-          "file": "/assets/uploads/speaker-stage-1.jpg"
+          "file": "/assets/uploads/speaker-stage-1.webp"
         },
         {
           "label": "Blocking in",
-          "file": "/assets/uploads/speaker-stage-2.jpg"
+          "file": "/assets/uploads/speaker-stage-2.webp"
         }
       ]
     },
@@ -411,7 +411,7 @@
       "title": "Live Wire",
       "medium": "Acrylic and paint marker on paper",
       "year": "2026",
-      "image": "/assets/uploads/live-wire.jpg",
+      "image": "/assets/uploads/live-wire.webp",
       "alt": "A red head against a pale ground, then bound in turquoise and orange contour until the drawing sits on top of the painting as a second skin.",
       "rotation": 0,
       "featured": true,
@@ -420,23 +420,23 @@
       "documentation": [
         {
           "label": "Underpainting",
-          "file": "/assets/uploads/live-wire-stage-1.jpg"
+          "file": "/assets/uploads/live-wire-stage-1.webp"
         },
         {
           "label": "First contour pass",
-          "file": "/assets/uploads/live-wire-stage-2.jpg"
+          "file": "/assets/uploads/live-wire-stage-2.webp"
         },
         {
           "label": "Contours extended",
-          "file": "/assets/uploads/live-wire-stage-3.jpg"
+          "file": "/assets/uploads/live-wire-stage-3.webp"
         },
         {
           "label": "Warm lines added",
-          "file": "/assets/uploads/live-wire-stage-4.jpg"
+          "file": "/assets/uploads/live-wire-stage-4.webp"
         },
         {
           "label": "Later state",
-          "file": "/assets/uploads/live-wire-stage-5.jpg"
+          "file": "/assets/uploads/live-wire-stage-5.webp"
         }
       ]
     },
@@ -445,7 +445,7 @@
       "title": "Sitting For It",
       "medium": "Acrylic and marker on paper",
       "year": "2026",
-      "image": "/assets/uploads/sitting-for-it.jpg",
+      "image": "/assets/uploads/sitting-for-it.webp",
       "alt": "A pale yellow face with a violet beard, held against a flat red ground.",
       "rotation": 0,
       "featured": true,
@@ -454,7 +454,7 @@
       "documentation": [
         {
           "label": "Earlier state",
-          "file": "/assets/uploads/sitting-for-it-stage-1.jpg"
+          "file": "/assets/uploads/sitting-for-it-stage-1.webp"
         }
       ]
     },
@@ -463,7 +463,7 @@
       "title": "Auburn",
       "medium": "Acrylic and graphite on paper",
       "year": "2026",
-      "image": "/assets/uploads/auburn.jpg",
+      "image": "/assets/uploads/auburn.webp",
       "alt": "Dark auburn hair sweeps around a yellow face; one eye stays drawn while the other is painted.",
       "rotation": 0,
       "featured": true,
@@ -472,7 +472,7 @@
       "documentation": [
         {
           "label": "Earlier state",
-          "file": "/assets/uploads/auburn-stage-1.jpg"
+          "file": "/assets/uploads/auburn-stage-1.webp"
         }
       ]
     },
@@ -481,7 +481,7 @@
       "title": "Fair Witness",
       "medium": "Paint marker and ink on paper",
       "year": "2026",
-      "image": "/assets/uploads/fair-witness.jpg",
+      "image": "/assets/uploads/fair-witness.webp",
       "alt": "Frontal head with golden hair, turquoise eyes and red lips, the skin built from pale hatched strokes",
       "rotation": 0,
       "featured": true,
@@ -493,7 +493,7 @@
       "title": "Firebrand",
       "medium": "Paint marker and ink on paper",
       "year": "2026",
-      "image": "/assets/uploads/firebrand.jpg",
+      "image": "/assets/uploads/firebrand.webp",
       "alt": "Long-necked figure with upswept orange hair, slate-blue brows and shadowed eyes",
       "rotation": 0,
       "featured": true,
@@ -505,7 +505,7 @@
       "title": "Soft Field I",
       "medium": "Mixed media on canvas",
       "year": "2026",
-      "image": "/assets/uploads/soft-field-i.jpg",
+      "image": "/assets/uploads/soft-field-i.webp",
       "alt": "Soft red, peach, turquoise, and gray color field punctuated by small raised marks",
       "rotation": 0,
       "featured": true,
@@ -516,7 +516,7 @@
       "title": "Violet Study",
       "medium": "Acrylic and graphite on paper",
       "year": "2026",
-      "image": "/assets/uploads/violet-study.jpg",
+      "image": "/assets/uploads/violet-study.webp",
       "alt": "A face held just below resolution, washed in violet, with only the lips and lower lids brought forward in red.",
       "rotation": 0,
       "featured": true,

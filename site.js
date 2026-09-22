@@ -1,4 +1,13 @@
-const load = () => fetch('/data/artworks.json').then(response => response.json()).then(data => data.artworks || []);
+const load = () => fetch('/data/artworks.json')
+  .then(response => {
+    if (!response.ok) throw new Error(`artworks.json ${response.status}`);
+    return response.json();
+  })
+  .then(data => data.artworks || []);
+
+function loadError(root, subject, panel = false) {
+  root.innerHTML = `<section class="load-error${panel ? ' snap-panel' : ''}" role="alert"><p class="muted">${subject} couldn’t be loaded. Check your connection and try again.</p><p class="mono"><a href="${esc(location.href)}">Try again</a> · <a href="/">Return to the portfolio</a></p></section>`;
+}
 const esc = (value = '') => String(value).replace(/[&<>'"]/g, character => ({
   '&': '&amp;',
   '<': '&lt;',
@@ -235,7 +244,13 @@ function lazyGlow(panel, feed) {
 
 async function home() {
   const feed = document.querySelector('#work-feed');
-  const works = (await load()).filter(work => work.featured !== false);
+  let works;
+  try {
+    works = (await load()).filter(work => work.featured !== false);
+  } catch {
+    loadError(feed, 'The portfolio', true);
+    return;
+  }
 
   const configured = homepageSeries
     .map(series => ({ ...series, works: works.filter(work => normalizeSeries(work.series) === series.name) }))
@@ -329,15 +344,26 @@ function seriesStory(work, works) {
 async function detail() {
   const root = document.querySelector('#work-detail');
   const id = new URLSearchParams(location.search).get('id');
-  const works = await load();
+  let works;
+  try {
+    works = await load();
+  } catch {
+    loadError(root, 'This work');
+    return;
+  }
   const work = works.find(item => item.slug === id);
 
   if (!work) {
-    root.innerHTML = '<p>Work not found. <a href="/">Return to the portfolio.</a>';
+    document.title = 'Work not found — Lauri Moyle — #NotFormlessNotVoid';
+    root.innerHTML = '<p class="muted">Work not found. <a href="/">Return to the portfolio.</a></p>';
     return;
   }
 
   document.title = `${work.title} — Lauri Moyle — #NotFormlessNotVoid`;
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if (canonical) canonical.href = `https://laurimoyle.art/work.html?id=${encodeURIComponent(work.slug)}`;
+  const description = document.querySelector('meta[name="description"]');
+  if (description) description.content = `${work.title} — ${work.medium}, ${work.year}. ${work.alt}`.slice(0, 300);
   const documents = (work.documentation || []).filter(item => item.file).map(documentationItem).join('');
   const individualStatement = work.statement ? `<div class="statement">${paragraphs(work.statement)}</div>` : (seriesStories[normalizeSeries(work.series)] ? '' : '<p class="muted">Statement and documentation forthcoming.</p>');
   const backHref = work.series ? `/#${idForSeries(work.series)}` : '/';
